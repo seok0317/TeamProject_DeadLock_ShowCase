@@ -1,0 +1,5163 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+  "original_repository": "2021Cyan/TeamProject2",
+  "author": "seok0317",
+  "purpose": "본인 구현·수정 범위만 전시하는 텍스트 코드 저장소. 실행 프로젝트가 아님.",
+  "classification_counts": {
+    "D": 12,
+    "E": 11,
+    "C": 6,
+    "A": 36,
+    "B": 2
+  },
+  "current_source_count": 296,
+  "investigated_own_commit_count": 89,
+  "source_records": [
+    {
+      "original_path": "Source/TeamProject_DL/AbilitySlot.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "horimi_의 스킬 슬롯 구조체에 UI용 SkillIcon 속성을 추가. 슬롯/스킬 성장 시스템 원 구현은 팀원.",
+      "basis_commits": [
+        "985ace845d159f0baabf04c56036bbe40347e402"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/AbilitySlot.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "ed091451e83e80130753c63b19b040b852714b19775c6d9ac1469fdeef6c00fe",
+          "source_git_blob": "08cd3f2b17a479613568d2d316e27d365d5802ea",
+          "segments": [
+            {
+              "start": 24,
+              "end": 26,
+              "origin_commits": [
+                "985ace845d159f0baabf04c56036bbe40347e402"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 27
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Common/SkillDamageLibrary.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "dalbi090211/Youngwoo의 피해 파이프라인에 EffectContext 다중 액터 추출과 넥서스 아군 피해/무적 차단을 추가. 기본 피해 공식·GE 파이프라인 전체는 팀원.",
+      "basis_commits": [
+        "bc67b4167a89465259187599adbef16fd79799a7",
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+        "85de1ba55bfb207fa3a2c506d60fd6208b5d08ec",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "04c1a1f788e76eec7542710ef2b7bee125dbb667",
+          "author": "dalbi090211",
+          "subject": "Feature : 공용 데미지 계산 함수 구현"
+        },
+        {
+          "sha": "6d14c51d211489949b1d1a31b7114c54e45c165b",
+          "author": "dalbi090211",
+          "subject": "Fix : 미니언 스탯 초기화 오류 수정, 적 감지 로직 개선"
+        },
+        {
+          "sha": "776ed13fc0cbef0d1f387e204a6f44be07015e28",
+          "author": "dalbi090211",
+          "subject": "Feature : 포탑 BT, GA_Beam 구현"
+        },
+        {
+          "sha": "ca0d17ad8ae079a604633a56dbf983f36992f0e2",
+          "author": "youngwoo",
+          "subject": "Fix: 데미지 파이프라인 적용"
+        },
+        {
+          "sha": "6b94a48fc2d138c699ab416d12c38aa8b0547d19",
+          "author": "dalbi090211",
+          "subject": "Feature : 1스킬, 좀비 구현"
+        },
+        {
+          "sha": "70a21dc1ba0b9cfcf3a4b5ac8421d4634cd6de1a",
+          "author": "dalbi090211",
+          "subject": "Feature : 3스킬 구현"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/SkillDamageLibrary.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "b7599fb4071809fdc2beadc06bd9cf8483d7af10fbf489dbbc2f535e6b7d7142",
+          "source_git_blob": "b82c32139ac3c0d8b385bf1f01904a177b82ec06",
+          "segments": [
+            {
+              "start": 14,
+              "end": 14,
+              "origin_commits": [
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3"
+              ]
+            },
+            {
+              "start": 181,
+              "end": 198,
+              "origin_commits": [
+                "85de1ba55bfb207fa3a2c506d60fd6208b5d08ec",
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3"
+              ]
+            },
+            {
+              "start": 264,
+              "end": 273,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 283,
+              "end": 303,
+              "origin_commits": [
+                "bc67b4167a89465259187599adbef16fd79799a7"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 303
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Common/SkillDamageLibrary.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "다중 대상 Cue 연결용 GetActorsFromEffectContext 선언 추가만 본인.",
+      "basis_commits": [
+        "bc67b4167a89465259187599adbef16fd79799a7"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "04c1a1f788e76eec7542710ef2b7bee125dbb667",
+          "author": "dalbi090211",
+          "subject": "Feature : 공용 데미지 계산 함수 구현"
+        },
+        {
+          "sha": "6d14c51d211489949b1d1a31b7114c54e45c165b",
+          "author": "dalbi090211",
+          "subject": "Fix : 미니언 스탯 초기화 오류 수정, 적 감지 로직 개선"
+        },
+        {
+          "sha": "ca0d17ad8ae079a604633a56dbf983f36992f0e2",
+          "author": "youngwoo",
+          "subject": "Fix: 데미지 파이프라인 적용"
+        },
+        {
+          "sha": "6b94a48fc2d138c699ab416d12c38aa8b0547d19",
+          "author": "dalbi090211",
+          "subject": "Feature : 1스킬, 좀비 구현"
+        },
+        {
+          "sha": "b7ee4d9e9978248ffcc7e2cbd7fbc59bcd0b4046",
+          "author": "dalbi090211",
+          "subject": "Feature : 2스킬 구현, Graves 몽타주 구현, 테스트용 스폰 로직 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/SkillDamageLibrary.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "5ff67364ccf21f7b866649ca17bf90cc3f8000c7cb1c1060771dd7e2ba2b4a29",
+          "source_git_blob": "1b4618ee561a512f763130d053382fcfc5d37d3d",
+          "segments": [
+            {
+              "start": 35,
+              "end": 37,
+              "origin_commits": [
+                "bc67b4167a89465259187599adbef16fd79799a7"
+              ]
+            },
+            {
+              "start": 49,
+              "end": 49,
+              "origin_commits": [
+                "7ea876904ccd65e04c21e0e3d1972545309245e1"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 76
+        }
+      ],
+      "basis_merge_commits": [
+        "7ea876904ccd65e04c21e0e3d1972545309245e1"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Doorman/GA_CallBell.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 Doorman 스킬에서 SetAssetTags 임시 주석 처리/머지 대응만 본인. 현 경로는 재배치됐으며 Doorman 기능 구현 코드로 공개하지 않음.",
+      "basis_commits": [
+        "9ba63274eca7970c6c063033c6ae14147a6da17a",
+        "d6c1cfe90f20d117a02c126684c1d8955c269983"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "ed3f2fd94926ec188a052cddea132c566c27e8fa",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 준비"
+        },
+        {
+          "sha": "545ccc265a28669d4519affc590fa194edafc8d0",
+          "author": "Youngwoo",
+          "subject": "Feat: 로그 추가"
+        },
+        {
+          "sha": "29e5459fb47974b0b8cd3c045d4155279e795aa2",
+          "author": "Youngwoo",
+          "subject": "Feat: Doorman 1번스킬 구현"
+        },
+        {
+          "sha": "ae6d97f6c7e6fdd1967883f8406c7f894cff602b",
+          "author": "youngwoo",
+          "subject": "Feat: 기존 코드 데미지 파이프라인 변경"
+        },
+        {
+          "sha": "ca0d17ad8ae079a604633a56dbf983f36992f0e2",
+          "author": "youngwoo",
+          "subject": "Fix: 데미지 파이프라인 적용"
+        },
+        {
+          "sha": "506019c36210f7508824e25f72eff786496e40dc",
+          "author": "youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "7418b74f0e7240cc6f2d208db8374039d449efc1",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 리팩토링"
+        },
+        {
+          "sha": "04b2f3cf0a1ebe762743e8312862f54cfc61a583",
+          "author": "Youngwoo",
+          "subject": "Feat: CallBell 스킬 완성 및 발사/타격 이펙트"
+        },
+        {
+          "sha": "bb19a3c389699bb7e5dd91183f27435d565cd3b5",
+          "author": "Youngwoo",
+          "subject": "Fix: 버그 수정"
+        },
+        {
+          "sha": "4234b08e2d2524482d0eb876db548ab41b0722ce",
+          "author": "Youngwoo",
+          "subject": "Fix: 병합 충돌 수정"
+        },
+        {
+          "sha": "f9528357a2c31491f8fe0c9fe44907f5c9c8337e",
+          "author": "Youngwoo",
+          "subject": "Fix: Callbell 행동 수정"
+        },
+        {
+          "sha": "932b9e3d3c3ae8313dca0a002dc935c9a5f9a2b6",
+          "author": "youngwoo",
+          "subject": "Fix: 빌드 오류 수정"
+        },
+        {
+          "sha": "44b71d3b8dcbb352ae108ad40d43f39958379b75",
+          "author": "Youngwoo",
+          "subject": "Fix: 코드 분리"
+        },
+        {
+          "sha": "9390970c88bf7be01797ae06257d173550113ef3",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 정리"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": [
+        "48250532f1489ab513f29c3ad586ef346621f5fb"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Doorman/GA_Doorway.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 Doorman 스킬에서 SetAssetTags 임시 주석 처리/머지 대응만 본인. 현 경로는 재배치됐으며 Doorman 기능 구현 코드로 공개하지 않음.",
+      "basis_commits": [
+        "7ba4c4149bbb5bbfafbe6e76e4dbfdafb58c93a8"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "ed3f2fd94926ec188a052cddea132c566c27e8fa",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 준비"
+        },
+        {
+          "sha": "4f8b991456021883b276fde46bf91e560e0b83bf",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "8f15d293aa63041afd7b328271f542f607276aec",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "eca35d6e664d50d4f78b43bb3e3047d0edcaf055",
+          "author": "youngwoo",
+          "subject": "Fix: Doorway 수정"
+        },
+        {
+          "sha": "932b9e3d3c3ae8313dca0a002dc935c9a5f9a2b6",
+          "author": "youngwoo",
+          "subject": "Fix: 빌드 오류 수정"
+        },
+        {
+          "sha": "73d95c3439eebd9bf5b3997c30231848a3fe05a2",
+          "author": "youngwoo",
+          "subject": "Feat: Doorway 이펙트 추가"
+        },
+        {
+          "sha": "9390970c88bf7be01797ae06257d173550113ef3",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 정리"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Doorman/GA_HotelGuest.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 Doorman 스킬에서 SetAssetTags 임시 주석 처리/머지 대응만 본인. 현 경로는 재배치됐으며 Doorman 기능 구현 코드로 공개하지 않음.",
+      "basis_commits": [
+        "7ba4c4149bbb5bbfafbe6e76e4dbfdafb58c93a8"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "ed3f2fd94926ec188a052cddea132c566c27e8fa",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 준비"
+        },
+        {
+          "sha": "506019c36210f7508824e25f72eff786496e40dc",
+          "author": "youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "4f8b991456021883b276fde46bf91e560e0b83bf",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "c54da6c6030580d3fa6f5cbef0ca25b7ff67f5a0",
+          "author": "Youngwoo",
+          "subject": "Feat: 팀 판별 로직 변경"
+        },
+        {
+          "sha": "95c36ed336415396c6682f916156ef1f473cd9fd",
+          "author": "Youngwoo",
+          "subject": "Feat: 팀 판정 헬퍼 function"
+        },
+        {
+          "sha": "f40d845c42d70bb078038356f54d00eab56c9276",
+          "author": "Youngwoo",
+          "subject": "Feat: Hotel Guest 스킬 완성"
+        },
+        {
+          "sha": "932b9e3d3c3ae8313dca0a002dc935c9a5f9a2b6",
+          "author": "youngwoo",
+          "subject": "Fix: 빌드 오류 수정"
+        },
+        {
+          "sha": "44b71d3b8dcbb352ae108ad40d43f39958379b75",
+          "author": "Youngwoo",
+          "subject": "Fix: 코드 분리"
+        },
+        {
+          "sha": "9390970c88bf7be01797ae06257d173550113ef3",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 정리"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Doorman/GA_LugguageCart.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 Doorman 스킬에서 SetAssetTags 임시 주석 처리/머지 대응만 본인. 현 경로는 재배치됐으며 Doorman 기능 구현 코드로 공개하지 않음.",
+      "basis_commits": [
+        "d6c1cfe90f20d117a02c126684c1d8955c269983"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "ed3f2fd94926ec188a052cddea132c566c27e8fa",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 준비"
+        },
+        {
+          "sha": "506019c36210f7508824e25f72eff786496e40dc",
+          "author": "youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "7418b74f0e7240cc6f2d208db8374039d449efc1",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 리팩토링"
+        },
+        {
+          "sha": "932b9e3d3c3ae8313dca0a002dc935c9a5f9a2b6",
+          "author": "youngwoo",
+          "subject": "Fix: 빌드 오류 수정"
+        },
+        {
+          "sha": "9390970c88bf7be01797ae06257d173550113ef3",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 정리"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Character/BaseCharacter.cpp",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "SharedCharacter",
+      "contribution": "dalbi090211의 캐릭터/ASC/스탯 기반, Youngwoo의 전투·집라인, horimi_의 성장·스킬 기반과 함께 쓰는 공통 클래스. 본인은 공통 이동·상태 연계·스태미나 패시브·HUD/체력바·리스폰 바인딩 등을 구현한 범위만 발췌.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "cf35cc62ed17e3b4e2e49234491da38284a906a7",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+        "d6af142b877cc16e23bc4276540a74e78562d759",
+        "695932c9c9407d67bd239dc7adfc7735ba35589b",
+        "249fc259fce810baaf7a9101fa360da732b721e4",
+        "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07",
+        "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+        "c2d41eb0901b7431e51e90d03af123643322b03e",
+        "94b576a110378d5bb9f535908a0575f1d9b40f51",
+        "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "2b2ff59506157225daadf073a9d7ba31ef5bbcc7",
+          "author": "dalbi090211",
+          "subject": "캐릭터 선택, 공격 반응 시스템 구현"
+        },
+        {
+          "sha": "de122787fb815b047004c1980f07e51a3f4a2e5d",
+          "author": "Youngwoo",
+          "subject": "Feat: 에임오프셋 WIP"
+        },
+        {
+          "sha": "f2fb15ecfad8923721e764cd4c6a382bf1a5b864",
+          "author": "dalbi090211",
+          "subject": "자해, 사망, 리스폰 구현"
+        },
+        {
+          "sha": "0ccc0bc22a3c70116ad2b8f631ad42622647abb0",
+          "author": "dalbi090211",
+          "subject": "Player State 구현, 리스폰 구현"
+        },
+        {
+          "sha": "a956f82e4f5a8902e1c31fb465ab80ea07eaedc3",
+          "author": "dalbi090211",
+          "subject": "Merge branch 'develop' into Feature/스탯-시스템-구현"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "3dd3471a62933b1df9d4b69b9af866acc9567474",
+          "author": "dalbi090211",
+          "subject": "Feature : player state asc 교체, attribute 세팅용 태그 설정"
+        },
+        {
+          "sha": "cdb267d6732c9e635084136e6febd827bd49a050",
+          "author": "dalbi090211",
+          "subject": "Feautre : Attribute 속성 세팅 자동화 구현"
+        },
+        {
+          "sha": "0148f4fdf2bff5ef515bc74a1f325437e57888cf",
+          "author": "dalbi090211",
+          "subject": "Feature : 레벨 Scaling 스탯 구현, 스탯 추가용 GUI 완성"
+        },
+        {
+          "sha": "1cdd20f874f8755285ea2a91b7dc6c3e6928cf62",
+          "author": "dalbi090211",
+          "subject": "Feature : Scailing 로직 개편"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "4a4e25ac39c0319711c5b32baef81269752236cc",
+          "author": "Youngwoo",
+          "subject": "Feat: 투사체 발사 위치 조정"
+        },
+        {
+          "sha": "fec35c021d233d96a4901b211c4e2446a45f94e3",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 및 재장전"
+        },
+        {
+          "sha": "c9798b185eb22ef08cccbe011dbe4ed48b602ad8",
+          "author": "Youngwoo",
+          "subject": "Fix: 머지 충돌 해결"
+        },
+        {
+          "sha": "76f99e689e952de410838965dd3bca5d52c7dc85",
+          "author": "Youngwoo",
+          "subject": "Feat: 헤드샷 배율(1.5배) 추가"
+        },
+        {
+          "sha": "e97f9e3985073af688dad41283c21509437b7254",
+          "author": "horimi_",
+          "subject": "Fix: AbilitySlots를 리플리케이트하여 클라 핸들 동기화"
+        },
+        {
+          "sha": "be85f5c1b320e42c1b504f62439c93899a86d563",
+          "author": "horimi_",
+          "subject": "Fix: 재화(소울) 빌드 오류 수정"
+        },
+        {
+          "sha": "2d9b1a594bbb68c1f7ea776aebf3b41b0f8197d4",
+          "author": "dalbi090211",
+          "subject": "Feautre : health 처리 component 이관, damage type에 따른 계산 구현"
+        },
+        {
+          "sha": "20f0057b3db41e150850ca6a2df234339c437f70",
+          "author": "youngwoo",
+          "subject": "Feature: 근접 공격 몽타주 재생"
+        },
+        {
+          "sha": "ec35059a7c4702bee7a45e1a06a075a3003441c2",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 준비"
+        },
+        {
+          "sha": "f56b4fca510c227ee4e3540e265056f8cd74c7bf",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 몽타주 재생"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "3a11d1209fb88f1551c112f59e223f72c8d891fd",
+          "author": "Youngwoo",
+          "subject": "Fix: 장전 버그 수정"
+        },
+        {
+          "sha": "4b63303d91c3b330aa8b642c2270678e825ef6d9",
+          "author": "dalbi090211",
+          "subject": "Feature : 스폰, 사망 처리 리팩토링"
+        },
+        {
+          "sha": "96352b08159d7bb10412eec0cd5357bbe3b6fa52",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 스폰 시스템 뼈대"
+        },
+        {
+          "sha": "5f49c1b94a35e0ac1dbedcd7916a422d3a781c75",
+          "author": "dalbi090211",
+          "subject": "Fix : collision channel getter 추가"
+        },
+        {
+          "sha": "3e9283dcbb6218532862c3946bde9905b54d2213",
+          "author": "dalbi090211",
+          "subject": "Feature : 근접 미니언, 미니언 동선 유도, 미니언 스폰 구현"
+        },
+        {
+          "sha": "6d14c51d211489949b1d1a31b7114c54e45c165b",
+          "author": "dalbi090211",
+          "subject": "Fix : 미니언 스탯 초기화 오류 수정, 적 감지 로직 개선"
+        },
+        {
+          "sha": "ee1d6b9b9793c163602dd23dfdb3e1c8c5773932",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 소울 드랍 추가"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        },
+        {
+          "sha": "c0f4730e7d307c4057a11ae78dd50091f79e1a8b",
+          "author": "horimi_",
+          "subject": "Refactor: TeamIdx 기반 팀 판정으로 통합"
+        },
+        {
+          "sha": "8f15d293aa63041afd7b328271f542f607276aec",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "39523e9ca1e82a1a1848cd78a8b0cd3b68a559e7",
+          "author": "dalbi090211",
+          "subject": "Feature : 4스킬 구현, GameMap 미니언 스폰 추가"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "da1051ff3e416e4021eab70ed9a68d3943f8c846",
+          "author": "horimi_",
+          "subject": "Feat: GE 스턴 추가"
+        },
+        {
+          "sha": "ea5a141a4c2df86dae019128fca88d03be5b6a90",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 네트워크 예측 동기화"
+        },
+        {
+          "sha": "85517bd6d58c95c097d05e618206ae9c3702685d",
+          "author": "dalbi090211",
+          "subject": "Feature : AI 루트 생성 로직 변경, 좀비 완성"
+        },
+        {
+          "sha": "b7ee4d9e9978248ffcc7e2cbd7fbc59bcd0b4046",
+          "author": "dalbi090211",
+          "subject": "Feature : 2스킬 구현, Graves 몽타주 구현, 테스트용 스폰 로직 추가"
+        },
+        {
+          "sha": "8b0dffa290e9555381e7d794aae0db147a13a19a",
+          "author": "Youngwoo",
+          "subject": "Fix: 미니언 수정"
+        },
+        {
+          "sha": "e3fed5f2223a18aae9f3004319067b75ab117b36",
+          "author": "dalbi090211",
+          "subject": "Feature : AI 감지 개선"
+        },
+        {
+          "sha": "14fee7c0892060856fe478541a7407a6e3b29e66",
+          "author": "horimi_",
+          "subject": "Refactor: SkillBase 리팩토링 및 오류 수정"
+        },
+        {
+          "sha": "47ddbb4c0555933dbae840bf4e4e87180aea1b8d",
+          "author": "dalbi090211",
+          "subject": "Feature : 데미지 UI 추가, 씬 전환 간 연출 구현, 미니언 경로 추가, 데미지 버그 수정"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "79a9761739e007bcefa20b5753cf06e785d9719e",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "e70f830e0b49425970b3c9c41fde573b04a03e4c",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "318a3620dedafb299d789116a7c3b225764b1aea",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "91ebb931567bd15bd4824ae7d97d52b843979416",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "4b5eb1a08976b487b32e05963ddf041054121151",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "8e515827a536ecda708b22eef7ec492123f39a63",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "89a20768cf71bc5fe49d356400c889c1151f6b5a",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        },
+        {
+          "sha": "422619094eaf1707f458eaaf8fa29521bc2fc3b1",
+          "author": "horimi_"
+        },
+        {
+          "sha": "be3b2b0a60788916a0235bfc98db9d32dd7ee2ad",
+          "author": "horimi_"
+        },
+        {
+          "sha": "96019ee526f805537167abf87e68c861d2b5541a",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/SharedCharacter/BaseCharacter.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "dbfc50d2e5d4f74970f3666a169ad6b03f9da5957455a8faa6f64ac0236405ee",
+          "source_git_blob": "9981ad6e87cc2b26ab6c8dc35efdda9b305bdd13",
+          "segments": [
+            {
+              "start": 1,
+              "end": 1,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+              ]
+            },
+            {
+              "start": 7,
+              "end": 7,
+              "origin_commits": [
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2"
+              ]
+            },
+            {
+              "start": 10,
+              "end": 12,
+              "origin_commits": [
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            },
+            {
+              "start": 15,
+              "end": 16,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 25,
+              "end": 25,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 34,
+              "end": 34,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 44,
+              "end": 50,
+              "origin_commits": [
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            },
+            {
+              "start": 75,
+              "end": 76,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 79,
+              "end": 80,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 86,
+              "end": 86,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 92,
+              "end": 114,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2"
+              ]
+            },
+            {
+              "start": 116,
+              "end": 140,
+              "origin_commits": [
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf"
+              ]
+            },
+            {
+              "start": 142,
+              "end": 142,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 146,
+              "end": 150,
+              "origin_commits": [
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b"
+              ]
+            },
+            {
+              "start": 152,
+              "end": 152,
+              "origin_commits": [
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b"
+              ]
+            },
+            {
+              "start": 155,
+              "end": 155,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 158,
+              "end": 158,
+              "origin_commits": [
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b"
+              ]
+            },
+            {
+              "start": 160,
+              "end": 160,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 163,
+              "end": 164,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 171,
+              "end": 172,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b"
+              ]
+            },
+            {
+              "start": 175,
+              "end": 175,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 177,
+              "end": 177,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 180,
+              "end": 180,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 189,
+              "end": 191,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 197,
+              "end": 197,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            },
+            {
+              "start": 200,
+              "end": 201,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            },
+            {
+              "start": 205,
+              "end": 205,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 211,
+              "end": 211,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 217,
+              "end": 217,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 221,
+              "end": 221,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976"
+              ]
+            },
+            {
+              "start": 227,
+              "end": 237,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 239,
+              "end": 241,
+              "origin_commits": [
+                "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 278,
+              "end": 278,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 299,
+              "end": 299,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 320,
+              "end": 320,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 322,
+              "end": 322,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 349,
+              "end": 349,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 417,
+              "end": 417,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 445,
+              "end": 445,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 481,
+              "end": 481,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 510,
+              "end": 510,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+              ]
+            },
+            {
+              "start": 518,
+              "end": 529,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 532,
+              "end": 534,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            },
+            {
+              "start": 536,
+              "end": 537,
+              "origin_commits": [
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            },
+            {
+              "start": 543,
+              "end": 547,
+              "origin_commits": [
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2"
+              ]
+            },
+            {
+              "start": 549,
+              "end": 567,
+              "origin_commits": [
+                "c2d41eb0901b7431e51e90d03af123643322b03e"
+              ]
+            },
+            {
+              "start": 628,
+              "end": 629,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 633,
+              "end": 633,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 638,
+              "end": 638,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 731,
+              "end": 731,
+              "origin_commits": [
+                "cf35cc62ed17e3b4e2e49234491da38284a906a7"
+              ]
+            },
+            {
+              "start": 746,
+              "end": 746,
+              "origin_commits": [
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            },
+            {
+              "start": 758,
+              "end": 758,
+              "origin_commits": [
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            },
+            {
+              "start": 765,
+              "end": 765,
+              "origin_commits": [
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 801,
+              "end": 809,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+              ]
+            },
+            {
+              "start": 815,
+              "end": 815,
+              "origin_commits": [
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 818,
+              "end": 834,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b",
+                "249fc259fce810baaf7a9101fa360da732b721e4",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 836,
+              "end": 843,
+              "origin_commits": [
+                "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 851,
+              "end": 873,
+              "origin_commits": [
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 875,
+              "end": 884,
+              "origin_commits": [
+                "94b576a110378d5bb9f535908a0575f1d9b40f51",
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 897,
+              "end": 914,
+              "origin_commits": [
+                "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a"
+              ]
+            },
+            {
+              "start": 930,
+              "end": 962,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 964,
+              "end": 967,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 997,
+              "end": 1002,
+              "origin_commits": [
+                "c2d41eb0901b7431e51e90d03af123643322b03e",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51",
+                "f9d65667b2e9e2ab27fd49a4638d187cef9d4826"
+              ]
+            },
+            {
+              "start": 1012,
+              "end": 1055,
+              "origin_commits": [
+                "d6af142b877cc16e23bc4276540a74e78562d759",
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 1176,
+              "end": 1176,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 1233,
+              "end": 1259,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b",
+                "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07",
+                "f6122f72492ea1e4924755618464e12878401503"
+              ]
+            },
+            {
+              "start": 1298,
+              "end": 1417,
+              "origin_commits": [
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+                "f9d65667b2e9e2ab27fd49a4638d187cef9d4826",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            },
+            {
+              "start": 1433,
+              "end": 1467,
+              "origin_commits": [
+                "f9d65667b2e9e2ab27fd49a4638d187cef9d4826",
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 1467
+        }
+      ],
+      "basis_merge_commits": [
+        "3a67aee35dcb652b79630ff18745bda534fc6248",
+        "cdb44946901b5a203db34d1626fe74e8438cf44f",
+        "f6122f72492ea1e4924755618464e12878401503",
+        "f9d65667b2e9e2ab27fd49a4638d187cef9d4826"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Character/BaseCharacter.h",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "SharedCharacter",
+      "contribution": "공통 캐릭터는 팀 공동 파일. 본인의 이동·체력바·HUD·패시브 관련 선언만 발췌. 총격·성장·사망 시스템 전체를 본인 구현으로 포함하지 않음.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "15a213c407e1705e5f9ccfbdd858eea022a46c86",
+        "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "d6af142b877cc16e23bc4276540a74e78562d759",
+        "695932c9c9407d67bd239dc7adfc7735ba35589b",
+        "249fc259fce810baaf7a9101fa360da732b721e4",
+        "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07",
+        "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+        "94b576a110378d5bb9f535908a0575f1d9b40f51",
+        "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "2b2ff59506157225daadf073a9d7ba31ef5bbcc7",
+          "author": "dalbi090211",
+          "subject": "캐릭터 선택, 공격 반응 시스템 구현"
+        },
+        {
+          "sha": "de122787fb815b047004c1980f07e51a3f4a2e5d",
+          "author": "Youngwoo",
+          "subject": "Feat: 에임오프셋 WIP"
+        },
+        {
+          "sha": "0ccc0bc22a3c70116ad2b8f631ad42622647abb0",
+          "author": "dalbi090211",
+          "subject": "Player State 구현, 리스폰 구현"
+        },
+        {
+          "sha": "a956f82e4f5a8902e1c31fb465ab80ea07eaedc3",
+          "author": "dalbi090211",
+          "subject": "Merge branch 'develop' into Feature/스탯-시스템-구현"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "34a4e873d6f104fd4d4ab2300f50a8cd48f1c38a",
+          "author": "horimi_",
+          "subject": "Chore: PS 이전 예정 항목에 TODO 주석 추가"
+        },
+        {
+          "sha": "3dd3471a62933b1df9d4b69b9af866acc9567474",
+          "author": "dalbi090211",
+          "subject": "Feature : player state asc 교체, attribute 세팅용 태그 설정"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "fec35c021d233d96a4901b211c4e2446a45f94e3",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 및 재장전"
+        },
+        {
+          "sha": "c9798b185eb22ef08cccbe011dbe4ed48b602ad8",
+          "author": "Youngwoo",
+          "subject": "Fix: 머지 충돌 해결"
+        },
+        {
+          "sha": "76f99e689e952de410838965dd3bca5d52c7dc85",
+          "author": "Youngwoo",
+          "subject": "Feat: 헤드샷 배율(1.5배) 추가"
+        },
+        {
+          "sha": "e97f9e3985073af688dad41283c21509437b7254",
+          "author": "horimi_",
+          "subject": "Fix: AbilitySlots를 리플리케이트하여 클라 핸들 동기화"
+        },
+        {
+          "sha": "f32b3dae19a89b7ba23acdf962f6b63aaa15f2e7",
+          "author": "youngwoo",
+          "subject": "Fix: 장전 수정"
+        },
+        {
+          "sha": "be85f5c1b320e42c1b504f62439c93899a86d563",
+          "author": "horimi_",
+          "subject": "Fix: 재화(소울) 빌드 오류 수정"
+        },
+        {
+          "sha": "2d9b1a594bbb68c1f7ea776aebf3b41b0f8197d4",
+          "author": "dalbi090211",
+          "subject": "Feautre : health 처리 component 이관, damage type에 따른 계산 구현"
+        },
+        {
+          "sha": "20f0057b3db41e150850ca6a2df234339c437f70",
+          "author": "youngwoo",
+          "subject": "Feature: 근접 공격 몽타주 재생"
+        },
+        {
+          "sha": "ec35059a7c4702bee7a45e1a06a075a3003441c2",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 준비"
+        },
+        {
+          "sha": "f56b4fca510c227ee4e3540e265056f8cd74c7bf",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 몽타주 재생"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "4b63303d91c3b330aa8b642c2270678e825ef6d9",
+          "author": "dalbi090211",
+          "subject": "Feature : 스폰, 사망 처리 리팩토링"
+        },
+        {
+          "sha": "96352b08159d7bb10412eec0cd5357bbe3b6fa52",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 스폰 시스템 뼈대"
+        },
+        {
+          "sha": "5f49c1b94a35e0ac1dbedcd7916a422d3a781c75",
+          "author": "dalbi090211",
+          "subject": "Fix : collision channel getter 추가"
+        },
+        {
+          "sha": "3e9283dcbb6218532862c3946bde9905b54d2213",
+          "author": "dalbi090211",
+          "subject": "Feature : 근접 미니언, 미니언 동선 유도, 미니언 스폰 구현"
+        },
+        {
+          "sha": "6d14c51d211489949b1d1a31b7114c54e45c165b",
+          "author": "dalbi090211",
+          "subject": "Fix : 미니언 스탯 초기화 오류 수정, 적 감지 로직 개선"
+        },
+        {
+          "sha": "ee1d6b9b9793c163602dd23dfdb3e1c8c5773932",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 소울 드랍 추가"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        },
+        {
+          "sha": "c0f4730e7d307c4057a11ae78dd50091f79e1a8b",
+          "author": "horimi_",
+          "subject": "Refactor: TeamIdx 기반 팀 판정으로 통합"
+        },
+        {
+          "sha": "6d283f1ad07c2563e0a96fa6d3638fe7991e8385",
+          "author": "youngwoo",
+          "subject": "Feat: 집라인 WIP"
+        },
+        {
+          "sha": "08cd2483ec11f847d8a96146189e215308eb1926",
+          "author": "youngwoo",
+          "subject": "Fix: 코드 수정"
+        },
+        {
+          "sha": "39523e9ca1e82a1a1848cd78a8b0cd3b68a559e7",
+          "author": "dalbi090211",
+          "subject": "Feature : 4스킬 구현, GameMap 미니언 스폰 추가"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "da1051ff3e416e4021eab70ed9a68d3943f8c846",
+          "author": "horimi_",
+          "subject": "Feat: GE 스턴 추가"
+        },
+        {
+          "sha": "ea5a141a4c2df86dae019128fca88d03be5b6a90",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 네트워크 예측 동기화"
+        },
+        {
+          "sha": "85517bd6d58c95c097d05e618206ae9c3702685d",
+          "author": "dalbi090211",
+          "subject": "Feature : AI 루트 생성 로직 변경, 좀비 완성"
+        },
+        {
+          "sha": "acb2c7bd7af79454bf16ece451d8298dbebf94e6",
+          "author": "dalbi090211",
+          "subject": "Feature : Graves 1스킬용 WSoulOrb 구현"
+        },
+        {
+          "sha": "ecf4b6f1487587fbf6a2a2fbb820ed685cb949ae",
+          "author": "dalbi090211",
+          "subject": "Feature : Graves 1스킬 구현"
+        },
+        {
+          "sha": "14fee7c0892060856fe478541a7407a6e3b29e66",
+          "author": "horimi_",
+          "subject": "Refactor: SkillBase 리팩토링 및 오류 수정"
+        },
+        {
+          "sha": "47ddbb4c0555933dbae840bf4e4e87180aea1b8d",
+          "author": "dalbi090211",
+          "subject": "Feature : 데미지 UI 추가, 씬 전환 간 연출 구현, 미니언 경로 추가, 데미지 버그 수정"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "0d30633afcb48833071752d4cbf9cceb975df31a",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "79a9761739e007bcefa20b5753cf06e785d9719e",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "e70f830e0b49425970b3c9c41fde573b04a03e4c",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "318a3620dedafb299d789116a7c3b225764b1aea",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "91ebb931567bd15bd4824ae7d97d52b843979416",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "4b5eb1a08976b487b32e05963ddf041054121151",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "89a20768cf71bc5fe49d356400c889c1151f6b5a",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        },
+        {
+          "sha": "422619094eaf1707f458eaaf8fa29521bc2fc3b1",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/SharedCharacter/BaseCharacter.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "98bd5cd1f89af79745505052b3079880a6046e938ce8f0bf7f274a1e2427cdba",
+          "source_git_blob": "c8d10277d18b80ee8d760290bf185500bae67dab",
+          "segments": [
+            {
+              "start": 1,
+              "end": 1,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+              ]
+            },
+            {
+              "start": 10,
+              "end": 10,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 12,
+              "end": 12,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 32,
+              "end": 34,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 37,
+              "end": 37,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 45,
+              "end": 51,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 53,
+              "end": 54,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 56,
+              "end": 65,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 101,
+              "end": 101,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 115,
+              "end": 115,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 118,
+              "end": 118,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 120,
+              "end": 122,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+              ]
+            },
+            {
+              "start": 196,
+              "end": 207,
+              "origin_commits": [
+                "249fc259fce810baaf7a9101fa360da732b721e4",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "15a213c407e1705e5f9ccfbdd858eea022a46c86"
+              ]
+            },
+            {
+              "start": 210,
+              "end": 210,
+              "origin_commits": [
+                "15a213c407e1705e5f9ccfbdd858eea022a46c86"
+              ]
+            },
+            {
+              "start": 219,
+              "end": 219,
+              "origin_commits": [
+                "15a213c407e1705e5f9ccfbdd858eea022a46c86"
+              ]
+            },
+            {
+              "start": 228,
+              "end": 241,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 268,
+              "end": 273,
+              "origin_commits": [
+                "15a213c407e1705e5f9ccfbdd858eea022a46c86",
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd"
+              ]
+            },
+            {
+              "start": 275,
+              "end": 286,
+              "origin_commits": [
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "cdb44946901b5a203db34d1626fe74e8438cf44f",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "8366ef07bb149c88e36bf9d41ffcda92100b466a",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4"
+              ]
+            },
+            {
+              "start": 353,
+              "end": 372,
+              "origin_commits": [
+                "d6af142b877cc16e23bc4276540a74e78562d759",
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 373
+        }
+      ],
+      "basis_merge_commits": [
+        "3a67aee35dcb652b79630ff18745bda534fc6248",
+        "cdb44946901b5a203db34d1626fe74e8438cf44f",
+        "8366ef07bb149c88e36bf9d41ffcda92100b466a",
+        "f6122f72492ea1e4924755618464e12878401503"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Character/BasePlayerController.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "팀원 컨트롤러에 OnLocallyPossessed Blueprint 이벤트 선언을 추가. 실제 HUD 생성 그래프는 BP 확인 대상; 컨트롤러 cpp는 본인 코드가 아님.",
+      "basis_commits": [
+        "94b576a110378d5bb9f535908a0575f1d9b40f51"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "04c1a1f788e76eec7542710ef2b7bee125dbb667",
+          "author": "dalbi090211",
+          "subject": "Feature : 공용 데미지 계산 함수 구현"
+        },
+        {
+          "sha": "4b63303d91c3b330aa8b642c2270678e825ef6d9",
+          "author": "dalbi090211",
+          "subject": "Feature : 스폰, 사망 처리 리팩토링"
+        },
+        {
+          "sha": "96352b08159d7bb10412eec0cd5357bbe3b6fa52",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 스폰 시스템 뼈대"
+        },
+        {
+          "sha": "f40d845c42d70bb078038356f54d00eab56c9276",
+          "author": "Youngwoo",
+          "subject": "Feat: Hotel Guest 스킬 완성"
+        },
+        {
+          "sha": "8041c364795a633a83e31da865af589743942d95",
+          "author": "youngwoo",
+          "subject": "Feat: Doorway 구현"
+        },
+        {
+          "sha": "92f0c2ffef065e59d46d60ff98a5f0ce04d34faa",
+          "author": "horimi_",
+          "subject": "Feat: GameLift 매치메이킹 및 전투 서버 연동 추가"
+        },
+        {
+          "sha": "3417c5df1f1864ca4c91087b8fabf9715ffcab9c",
+          "author": "dalbi090211",
+          "subject": "Fix : 맵 이동 개선, AI 성능 측정 로직 추가"
+        },
+        {
+          "sha": "9ae0e345379a69b5557a01d9202f927839ace35a",
+          "author": "youngwoo",
+          "subject": "Feat: AWS FlexMatch 로컬 테스팅"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "fef04fe01162755d790ef977c69742443f6443b1",
+          "author": "Youngwoo"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/Integration/BasePlayerController.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "ad1924051014b0b35a65d86d9cc389b74e78a63e9adda24abda11c4167029385",
+          "source_git_blob": "02890aa992408f09e9f56652da9b1108aead49fc",
+          "segments": [
+            {
+              "start": 50,
+              "end": 52,
+              "origin_commits": [
+                "94b576a110378d5bb9f535908a0575f1d9b40f51"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 104
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Character/PlayerCharacter.cpp",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "SharedCharacter",
+      "contribution": "캐릭터 뼈대는 dalbi090211, 전투/집라인은 Youngwoo, 스킬 입력/상점 등은 horimi_. 본인은 카메라 기준 이동 입력·대시/슬라이드·UI 모드·이동 상태 연동 범위만 발췌.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+        "21de6b96d260c9eb094f324b7b7f1846098febc8",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "695932c9c9407d67bd239dc7adfc7735ba35589b",
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "20f0057b3db41e150850ca6a2df234339c437f70",
+          "author": "youngwoo",
+          "subject": "Feature: 근접 공격 몽타주 재생"
+        },
+        {
+          "sha": "ec35059a7c4702bee7a45e1a06a075a3003441c2",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 준비"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "0950d1e95534720a80bef0fbe735e6093cb65199",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 셀프 타겟 기능, Skill IA 추가"
+        },
+        {
+          "sha": "f1b7e00f67caf24bb2a3606cd9053be33dbe4933",
+          "author": "horimi_",
+          "subject": "Feat: 상점 및 인벤토리 데이터 구조 구현"
+        },
+        {
+          "sha": "7677c640802e1ba00ff812d16696fc30a82d7b03",
+          "author": "horimi_",
+          "subject": "Feat: 상점 및 인벤토리 기능 확장"
+        },
+        {
+          "sha": "695ac0125484f44299b7b576d5ab70742b82b401",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "16349091b4de84ccba8ac1ae6c30eb1e28bef155",
+          "author": "horimi_",
+          "subject": "Revert \"Feat: 아이템, 상점 UI 추가 및 개선\""
+        },
+        {
+          "sha": "fed3d9e3084198f73106742c2af2bb597964a218",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "7ea29a781a179ff7f77b95dda8ca3f7dc4157828",
+          "author": "youngwoo",
+          "subject": "Feat: 집라인 시작"
+        },
+        {
+          "sha": "4f8b991456021883b276fde46bf91e560e0b83bf",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "8f15d293aa63041afd7b328271f542f607276aec",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "4234b08e2d2524482d0eb876db548ab41b0722ce",
+          "author": "Youngwoo",
+          "subject": "Fix: 병합 충돌 수정"
+        },
+        {
+          "sha": "e92a2deccddbc4db589c3d03c92fb6c3362853a7",
+          "author": "Youngwoo",
+          "subject": "Fix: 쿨다운 조정"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "ccb26c2b9c3b007f0763c371cac52b26ca443b05",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 오류 수정"
+        },
+        {
+          "sha": "8041c364795a633a83e31da865af589743942d95",
+          "author": "youngwoo",
+          "subject": "Feat: Doorway 구현"
+        },
+        {
+          "sha": "f2c274efeead042946fc53e6eb3659c58f4dcfdb",
+          "author": "Youngwoo",
+          "subject": "Fix: Doorman 스킬 및 투사체 오브젝트 풀링"
+        },
+        {
+          "sha": "17ebbd0bb20be327bda911f03bef16ae5c7e58f3",
+          "author": "dalbi090211",
+          "subject": "Feature : 로비 및 UI 구현"
+        },
+        {
+          "sha": "d2b40643799d86230353441c68490be4a706404e",
+          "author": "Youngwoo",
+          "subject": "Feat: 집라인 코드 분리 및 리팩토링"
+        },
+        {
+          "sha": "520eea159072dc333996719e596183c8844fe547",
+          "author": "horimi_",
+          "subject": "Refactor: Viscous 스킬 동작 구조 개선 및 오류 수정"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "867ce2b8effb00c9b45a5375b662fcc715cd2847",
+          "author": "youngwoo"
+        },
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        },
+        {
+          "sha": "69b74e301c77bb88ef9b924508a25b044b11b38d",
+          "author": "Youngwoo"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/SharedCharacter/PlayerCharacter.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "53885bca1db3941fd1549356f4c3dbbf653d47027a1d8a4bca3f35d36bbd1d6e",
+          "source_git_blob": "d2f1743ff9725a9288e5ce296b046d9bcbc50ced",
+          "segments": [
+            {
+              "start": 1,
+              "end": 1,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 6,
+              "end": 6,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 12,
+              "end": 12,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 15,
+              "end": 15,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 31,
+              "end": 32,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 34,
+              "end": 40,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 43,
+              "end": 48,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 52,
+              "end": 52,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 244,
+              "end": 245,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 393,
+              "end": 423,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            },
+            {
+              "start": 442,
+              "end": 443,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 461,
+              "end": 461,
+              "origin_commits": [
+                "f6122f72492ea1e4924755618464e12878401503"
+              ]
+            },
+            {
+              "start": 484,
+              "end": 488,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b",
+                "f6122f72492ea1e4924755618464e12878401503"
+              ]
+            },
+            {
+              "start": 510,
+              "end": 514,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 516,
+              "end": 523,
+              "origin_commits": [
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 536,
+              "end": 541,
+              "origin_commits": [
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "718f4d5761df415a677c547aeb21284353811ba6"
+              ]
+            },
+            {
+              "start": 543,
+              "end": 543,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 546,
+              "end": 546,
+              "origin_commits": [
+                "718f4d5761df415a677c547aeb21284353811ba6"
+              ]
+            },
+            {
+              "start": 549,
+              "end": 575,
+              "origin_commits": [
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            },
+            {
+              "start": 586,
+              "end": 588,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 596,
+              "end": 596,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 609,
+              "end": 610,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 631,
+              "end": 633,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 635,
+              "end": 643,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e"
+              ]
+            },
+            {
+              "start": 649,
+              "end": 649,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 655,
+              "end": 681,
+              "origin_commits": [
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 767,
+              "end": 774,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 780,
+              "end": 780,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 786,
+              "end": 810,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+              ]
+            },
+            {
+              "start": 981,
+              "end": 991,
+              "origin_commits": [
+                "f6122f72492ea1e4924755618464e12878401503",
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 1294,
+              "end": 1294,
+              "origin_commits": [
+                "f6122f72492ea1e4924755618464e12878401503"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 1391
+        }
+      ],
+      "basis_merge_commits": [
+        "f6122f72492ea1e4924755618464e12878401503",
+        "f9d65667b2e9e2ab27fd49a4638d187cef9d4826"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Character/PlayerCharacter.h",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "SharedCharacter",
+      "contribution": "공통 플레이어 클래스에서 본인의 카메라·이동 입력·슬라이드/UI 관련 선언만 발췌.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "695932c9c9407d67bd239dc7adfc7735ba35589b"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "fec35c021d233d96a4901b211c4e2446a45f94e3",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 및 재장전"
+        },
+        {
+          "sha": "20f0057b3db41e150850ca6a2df234339c437f70",
+          "author": "youngwoo",
+          "subject": "Feature: 근접 공격 몽타주 재생"
+        },
+        {
+          "sha": "ec35059a7c4702bee7a45e1a06a075a3003441c2",
+          "author": "youngwoo",
+          "subject": "Feat: 패링 준비"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "0950d1e95534720a80bef0fbe735e6093cb65199",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 셀프 타겟 기능, Skill IA 추가"
+        },
+        {
+          "sha": "f1b7e00f67caf24bb2a3606cd9053be33dbe4933",
+          "author": "horimi_",
+          "subject": "Feat: 상점 및 인벤토리 데이터 구조 구현"
+        },
+        {
+          "sha": "7677c640802e1ba00ff812d16696fc30a82d7b03",
+          "author": "horimi_",
+          "subject": "Feat: 상점 및 인벤토리 기능 확장"
+        },
+        {
+          "sha": "695ac0125484f44299b7b576d5ab70742b82b401",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "16349091b4de84ccba8ac1ae6c30eb1e28bef155",
+          "author": "horimi_",
+          "subject": "Revert \"Feat: 아이템, 상점 UI 추가 및 개선\""
+        },
+        {
+          "sha": "fed3d9e3084198f73106742c2af2bb597964a218",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "4f8b991456021883b276fde46bf91e560e0b83bf",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 WIP"
+        },
+        {
+          "sha": "4234b08e2d2524482d0eb876db548ab41b0722ce",
+          "author": "Youngwoo",
+          "subject": "Fix: 병합 충돌 수정"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "ccb26c2b9c3b007f0763c371cac52b26ca443b05",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 오류 수정"
+        },
+        {
+          "sha": "8041c364795a633a83e31da865af589743942d95",
+          "author": "youngwoo",
+          "subject": "Feat: Doorway 구현"
+        },
+        {
+          "sha": "f2c274efeead042946fc53e6eb3659c58f4dcfdb",
+          "author": "Youngwoo",
+          "subject": "Fix: Doorman 스킬 및 투사체 오브젝트 풀링"
+        },
+        {
+          "sha": "17ebbd0bb20be327bda911f03bef16ae5c7e58f3",
+          "author": "dalbi090211",
+          "subject": "Feature : 로비 및 UI 구현"
+        },
+        {
+          "sha": "520eea159072dc333996719e596183c8844fe547",
+          "author": "horimi_",
+          "subject": "Refactor: Viscous 스킬 동작 구조 개선 및 오류 수정"
+        },
+        {
+          "sha": "85a30e40a7f5fae78b32841fc8b314e0a46061ec",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 리팩토링 및 포털 광원 추가"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        },
+        {
+          "sha": "96019ee526f805537167abf87e68c861d2b5541a",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/SharedCharacter/PlayerCharacter.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "25935651f1c06bd5826651c83196e9ae1127b31637513687997c9a2347c39ca1",
+          "source_git_blob": "9eecec056673c2e12cece5cb1c7117665b6731ee",
+          "segments": [
+            {
+              "start": 7,
+              "end": 7,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 29,
+              "end": 29,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 94,
+              "end": 96,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 100,
+              "end": 109,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 142,
+              "end": 156,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            },
+            {
+              "start": 172,
+              "end": 174,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 230,
+              "end": 231,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            },
+            {
+              "start": 242,
+              "end": 243,
+              "origin_commits": [
+                "695932c9c9407d67bd239dc7adfc7735ba35589b"
+              ]
+            },
+            {
+              "start": 269,
+              "end": 269,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 349
+        }
+      ],
+      "basis_merge_commits": [
+        "f6122f72492ea1e4924755618464e12878401503"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Combat/Ability/GA_Nexus_AoE.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Nexus",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Nexus/GA_Nexus_AoE.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "664fc1c19af57eb3d20fb0744438b5a91955077eab28b765ccc62c10484b8f20",
+          "source_git_blob": "004e35518c6372095b44b3496878ef2604f1b919",
+          "segments": [
+            {
+              "start": 1,
+              "end": 140,
+              "origin_commits": [
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 140
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Combat/Ability/GA_Nexus_AoE.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Nexus",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Nexus/GA_Nexus_AoE.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "b5e3be031f4626f09195dd8988dce0378a1af7d863ddee22f5db8360c7e042e7",
+          "source_git_blob": "718133df05899b32e8e3257edf660093a54d0437",
+          "segments": [
+            {
+              "start": 1,
+              "end": 69,
+              "origin_commits": [
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 69
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/GameRule/Nexus.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Nexus",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "825c0d252a9ec7f81b03d81531dfcc322ceef375",
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Nexus/Nexus.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "d52ebcbccb50ff225ea7bb36dc10c7e56f8213ed1fee8fcfd127b17be9003b2a",
+          "source_git_blob": "100336739fbd7398c8275d4fa6d14055c4aaaa51",
+          "segments": [
+            {
+              "start": 1,
+              "end": 286,
+              "origin_commits": [
+                "825c0d252a9ec7f81b03d81531dfcc322ceef375",
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 286
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/GameRule/Nexus.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Nexus",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "825c0d252a9ec7f81b03d81531dfcc322ceef375",
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3",
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Nexus/Nexus.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "0acdf7f52c80224952161380b62902470bfed5c4da6d58ee779579c66d7897ea",
+          "source_git_blob": "446c915ab728af7d93f1f2637e6bc1014781f581",
+          "segments": [
+            {
+              "start": 1,
+              "end": 117,
+              "origin_commits": [
+                "825c0d252a9ec7f81b03d81531dfcc322ceef375",
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36",
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 117
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/GameRule/Turret.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "dalbi090211의 포탑 클래스에 고유 사망 콜백과 마지막 최종 포탑 확인→같은 팀 넥서스 무적 해제 처리를 추가. 포탑 AI·빔 공격 본체 제외.",
+      "basis_commits": [
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "3e9283dcbb6218532862c3946bde9905b54d2213",
+          "author": "dalbi090211",
+          "subject": "Feature : 근접 미니언, 미니언 동선 유도, 미니언 스폰 구현"
+        },
+        {
+          "sha": "eacbe50b23a62ca63283391aa0d97787e216dc40",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언, 포탑의 공격 이펙트 구현"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/Turret.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "31ac60371cbee4a70c2cd423ea747675a988b867b0589587349577355505b178",
+          "source_git_blob": "7f1b5d34a513633078450148c1ca9115819d76e7",
+          "segments": [
+            {
+              "start": 5,
+              "end": 7,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 16,
+              "end": 16,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 24,
+              "end": 31,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 34,
+              "end": 87,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 87
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/GameRule/Turret.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "팀원 포탑에 bIsFinalTower와 OnTurretDeath 선언을 추가.",
+      "basis_commits": [
+        "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "3e9283dcbb6218532862c3946bde9905b54d2213",
+          "author": "dalbi090211",
+          "subject": "Feature : 근접 미니언, 미니언 동선 유도, 미니언 스폰 구현"
+        },
+        {
+          "sha": "776ed13fc0cbef0d1f387e204a6f44be07015e28",
+          "author": "dalbi090211",
+          "subject": "Feature : 포탑 BT, GA_Beam 구현"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/Turret.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "074177290828d018e14522cd14f5a70f300673667f274beeef64603902841f6a",
+          "source_git_blob": "67584b551d07fd9054596ea943cb2dcc879b5973",
+          "segments": [
+            {
+              "start": 30,
+              "end": 33,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            },
+            {
+              "start": 35,
+              "end": 37,
+              "origin_commits": [
+                "ffe5cf38c2bf4b1a7283de028ef13ed980c46d36"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 39
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Struct/ACharacterAttributeSet.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "dalbi090211 등의 스탯 클래스에 GE 적용 후 스태미나 Base Value 상한 보정을 추가. 스탯 생성·피해·체력 계산 전체 제외. 로그 주석 처리는 보조 정리.",
+      "basis_commits": [
+        "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07",
+        "94b576a110378d5bb9f535908a0575f1d9b40f51"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "f2fb15ecfad8923721e764cd4c6a382bf1a5b864",
+          "author": "dalbi090211",
+          "subject": "자해, 사망, 리스폰 구현"
+        },
+        {
+          "sha": "0ccc0bc22a3c70116ad2b8f631ad42622647abb0",
+          "author": "dalbi090211",
+          "subject": "Player State 구현, 리스폰 구현"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "3dd3471a62933b1df9d4b69b9af866acc9567474",
+          "author": "dalbi090211",
+          "subject": "Feature : player state asc 교체, attribute 세팅용 태그 설정"
+        },
+        {
+          "sha": "cdb267d6732c9e635084136e6febd827bd49a050",
+          "author": "dalbi090211",
+          "subject": "Feautre : Attribute 속성 세팅 자동화 구현"
+        },
+        {
+          "sha": "0148f4fdf2bff5ef515bc74a1f325437e57888cf",
+          "author": "dalbi090211",
+          "subject": "Feature : 레벨 Scaling 스탯 구현, 스탯 추가용 GUI 완성"
+        },
+        {
+          "sha": "a1a3f6eb08075a21a74fc8b072020bdbc1f71fab",
+          "author": "dalbi090211",
+          "subject": "Feature : 캐릭터 별 테이블 생성, 스탯 정리"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "c9798b185eb22ef08cccbe011dbe4ed48b602ad8",
+          "author": "Youngwoo",
+          "subject": "Fix: 머지 충돌 해결"
+        },
+        {
+          "sha": "c1647d65894ae1cb2f48ad5542a939831ecb57ea",
+          "author": "horimi_",
+          "subject": "Feat: 재화(소울) 어트리뷰트 추가"
+        },
+        {
+          "sha": "be85f5c1b320e42c1b504f62439c93899a86d563",
+          "author": "horimi_",
+          "subject": "Fix: 재화(소울) 빌드 오류 수정"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "04c1a1f788e76eec7542710ef2b7bee125dbb667",
+          "author": "dalbi090211",
+          "subject": "Feature : 공용 데미지 계산 함수 구현"
+        },
+        {
+          "sha": "6d14c51d211489949b1d1a31b7114c54e45c165b",
+          "author": "dalbi090211",
+          "subject": "Fix : 미니언 스탯 초기화 오류 수정, 적 감지 로직 개선"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        },
+        {
+          "sha": "29e5459fb47974b0b8cd3c045d4155279e795aa2",
+          "author": "Youngwoo",
+          "subject": "Feat: Doorman 1번스킬 구현"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "318a3620dedafb299d789116a7c3b225764b1aea",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "91ebb931567bd15bd4824ae7d97d52b843979416",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "6b457de9c7e51100808f667cf64c095bb2ba142d",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "4b5eb1a08976b487b32e05963ddf041054121151",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "422619094eaf1707f458eaaf8fa29521bc2fc3b1",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/Integration/ACharacterAttributeSet.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "6835d75ef05cf81505e86e63a1f106d04ecf158f02396ba05efee6b41766d6e2",
+          "source_git_blob": "da9a198ddb06b948e420fa1a1a83e3ccdc55e7d9",
+          "segments": [
+            {
+              "start": 167,
+              "end": 180,
+              "origin_commits": [
+                "9cd43bbdd7c2c2ed47367b4a0aef13a9ab4f3e07"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 314
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/GameCore/Struct/FStatRow.h",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "985ace845에서 UI 테스트용 AbilityUnlockTokens=10을 임시 추가하고 695932c9c에서 본인이 제거. 현재 기능 구현으로 계산하지 않음.",
+      "basis_commits": [
+        "985ace845d159f0baabf04c56036bbe40347e402",
+        "695932c9c9407d67bd239dc7adfc7735ba35589b"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "2b2ff59506157225daadf073a9d7ba31ef5bbcc7",
+          "author": "dalbi090211",
+          "subject": "캐릭터 선택, 공격 반응 시스템 구현"
+        },
+        {
+          "sha": "3dd3471a62933b1df9d4b69b9af866acc9567474",
+          "author": "dalbi090211",
+          "subject": "Feature : player state asc 교체, attribute 세팅용 태그 설정"
+        },
+        {
+          "sha": "0148f4fdf2bff5ef515bc74a1f325437e57888cf",
+          "author": "dalbi090211",
+          "subject": "Feature : 레벨 Scaling 스탯 구현, 스탯 추가용 GUI 완성"
+        },
+        {
+          "sha": "a1a3f6eb08075a21a74fc8b072020bdbc1f71fab",
+          "author": "dalbi090211",
+          "subject": "Feature : 캐릭터 별 테이블 생성, 스탯 정리"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "3b8e53a4381a494e50638ee106f29f5ac84a0ab1",
+          "author": "Youngwoo",
+          "subject": "Feat: 근접공격/패링 기능 구현"
+        },
+        {
+          "sha": "6752f8b723a09f096ed130a98d1199aad8120a8d",
+          "author": "Youngwoo",
+          "subject": "Fix: 머지 충돌 수정"
+        },
+        {
+          "sha": "04c1a1f788e76eec7542710ef2b7bee125dbb667",
+          "author": "dalbi090211",
+          "subject": "Feature : 공용 데미지 계산 함수 구현"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "91ebb931567bd15bd4824ae7d97d52b843979416",
+          "author": "dalbi090211"
+        }
+      ],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": [
+        "f6122f72492ea1e4924755618464e12878401503"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_DeathSlam.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "cfc50ba0a2bdb950f6e315face8bdf088c1c6951",
+        "c52346ea0844481614b56b8d7e50dfb0a53f3bc4",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "d5cf4cc1041ed686dacf76df7a42884442a80159",
+        "aacbc68d6e4084a1eb6ffecf4b0a94850e388520",
+        "cea838eeb69bc93eb99bd339eea256aa299dabe0",
+        "3aa15496b56aef4de4b2de168ef43e6f5d5a95d8",
+        "03863e944dcdee3745eb1dae2cdda814d00a812b",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_DeathSlam.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "2f30611fcf5fc1c5b786d103aeef93aa649d25634703f4838de0641c66fb4ab4",
+          "source_git_blob": "17cbbcbf3588f5ddc7aa804a207471adf1daced7",
+          "segments": [
+            {
+              "start": 1,
+              "end": 686,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "cfc50ba0a2bdb950f6e315face8bdf088c1c6951",
+                "c52346ea0844481614b56b8d7e50dfb0a53f3bc4",
+                "d5cf4cc1041ed686dacf76df7a42884442a80159",
+                "aacbc68d6e4084a1eb6ffecf4b0a94850e388520",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "3aa15496b56aef4de4b2de168ef43e6f5d5a95d8",
+                "cea838eeb69bc93eb99bd339eea256aa299dabe0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 686
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_DeathSlam.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "cfc50ba0a2bdb950f6e315face8bdf088c1c6951",
+        "c52346ea0844481614b56b8d7e50dfb0a53f3bc4",
+        "d5cf4cc1041ed686dacf76df7a42884442a80159",
+        "aacbc68d6e4084a1eb6ffecf4b0a94850e388520",
+        "cea838eeb69bc93eb99bd339eea256aa299dabe0",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_DeathSlam.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "1c3103402718d484684cbf26659cc441872c7c373eecd330cb56e52107c0c510",
+          "source_git_blob": "c63a9d1325ededfb5a7d19b31b9a71e7a2548b63",
+          "segments": [
+            {
+              "start": 1,
+              "end": 172,
+              "origin_commits": [
+                "cfc50ba0a2bdb950f6e315face8bdf088c1c6951",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "aacbc68d6e4084a1eb6ffecf4b0a94850e388520",
+                "c52346ea0844481614b56b8d7e50dfb0a53f3bc4",
+                "d5cf4cc1041ed686dacf76df7a42884442a80159",
+                "cea838eeb69bc93eb99bd339eea256aa299dabe0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 172
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_Flog.cpp",
+      "classification": "B",
+      "classification_label": "본인 구현 + 팀원 비기능 수정",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "Flog 공격·이론 피해 기반 회복·Cue 연결은 본인. Youngwoo의 fef04fe01 병합 수정은 Character.h include와 마지막 줄바꿈이며, 두 번째 부모와의 diff로 확인.",
+      "basis_commits": [
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "b96bfea6dc75988d73696cd8f4b26c715f26e6c0",
+        "bc67b4167a89465259187599adbef16fd79799a7",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [
+        {
+          "sha": "fef04fe01162755d790ef977c69742443f6443b1",
+          "author": "Youngwoo"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_Flog.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "3f8122221aa3d7795d116b68b241ad1bb78dc4504834904066861608387c7fda",
+          "source_git_blob": "977529dc1862fa472874780c51fe17fcbad894da",
+          "segments": [
+            {
+              "start": 1,
+              "end": 129,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "718f4d5761df415a677c547aeb21284353811ba6",
+                "11fb038132c009b5697c366e9ea08c87524f35a9",
+                "fef04fe01162755d790ef977c69742443f6443b1",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "bc67b4167a89465259187599adbef16fd79799a7",
+                "b96bfea6dc75988d73696cd8f4b26c715f26e6c0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 129
+        }
+      ],
+      "basis_merge_commits": [
+        "f2842d71354a01f1b7db8a7f76839268a891b19f"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_Flog.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "b96bfea6dc75988d73696cd8f4b26c715f26e6c0",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_Flog.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "e3f66bb46a8d1b9e43aa88057e63f57b0beb66cd84a1ae254c56b15db385be86",
+          "source_git_blob": "f231a924b884e11c433777e3eb35a4f33d8d59bb",
+          "segments": [
+            {
+              "start": 1,
+              "end": 47,
+              "origin_commits": [
+                "11fb038132c009b5697c366e9ea08c87524f35a9",
+                "718f4d5761df415a677c547aeb21284353811ba6",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "b96bfea6dc75988d73696cd8f4b26c715f26e6c0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 47
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_Grapple.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "b96bfea6dc75988d73696cd8f4b26c715f26e6c0",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_Grapple.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "fb2ef7cfaf9710c213c6a1c7d612539c4e545749f07fa21b184ea11423c9b3fa",
+          "source_git_blob": "feb8bb578a51a1b9b74ecc8e2023380c655ae8d5",
+          "segments": [
+            {
+              "start": 1,
+              "end": 141,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "718f4d5761df415a677c547aeb21284353811ba6",
+                "11fb038132c009b5697c366e9ea08c87524f35a9",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "b96bfea6dc75988d73696cd8f4b26c715f26e6c0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 141
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_Grapple.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "b96bfea6dc75988d73696cd8f4b26c715f26e6c0",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_Grapple.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "cab7b9db94940d74ff3b641b5e66ec297cfb0c7ddc90d1c0a7fa1cbf28006d5b",
+          "source_git_blob": "d94d95173e920c4714a41736b7cded4ea8ab96c4",
+          "segments": [
+            {
+              "start": 1,
+              "end": 53,
+              "origin_commits": [
+                "11fb038132c009b5697c366e9ea08c87524f35a9",
+                "718f4d5761df415a677c547aeb21284353811ba6",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "b96bfea6dc75988d73696cd8f4b26c715f26e6c0"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 53
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_GroundStrike.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "37858f285646187c5a1a23bb29fc7794f7e4bebc",
+        "94b576a110378d5bb9f535908a0575f1d9b40f51",
+        "718f4d5761df415a677c547aeb21284353811ba6",
+        "d6c1cfe90f20d117a02c126684c1d8955c269983",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+        "4685652f7174ef4ab49a88a3f0fa8ea8666988f3"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_GroundStrike.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "8cdf75679d994e5ce8ec565b92a76620e25ced4439f76af07bdb6f7970ab4b51",
+          "source_git_blob": "093f4971e1a9f5b5e8dff424d0ebebd56d18da9a",
+          "segments": [
+            {
+              "start": 1,
+              "end": 310,
+              "origin_commits": [
+                "c5dc09fdf2b7056c90bada2580118a4f792b0b66",
+                "37858f285646187c5a1a23bb29fc7794f7e4bebc",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51",
+                "718f4d5761df415a677c547aeb21284353811ba6",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "d6c1cfe90f20d117a02c126684c1d8955c269983",
+                "4685652f7174ef4ab49a88a3f0fa8ea8666988f3"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 310
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GA_Lash_GroundStrike.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "37858f285646187c5a1a23bb29fc7794f7e4bebc",
+        "94b576a110378d5bb9f535908a0575f1d9b40f51",
+        "d6c1cfe90f20d117a02c126684c1d8955c269983",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/GA_Lash_GroundStrike.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "6729622a9a72a51f492b6c2ddcf33749f738d6a45622489c89285a72bfcaca37",
+          "source_git_blob": "0e94032fd8d3ade01c0e5c6fbca071d5f3b9edd8",
+          "segments": [
+            {
+              "start": 1,
+              "end": 72,
+              "origin_commits": [
+                "37858f285646187c5a1a23bb29fc7794f7e4bebc",
+                "94b576a110378d5bb9f535908a0575f1d9b40f51",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "d6c1cfe90f20d117a02c126684c1d8955c269983"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 72
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GCN_Lash_FlogRope.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": false,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성한 파일. 현재 삭제되어 최신 코드와 구분한 과거 구현으로 보존.",
+      "basis_commits": [
+        "bc67b4167a89465259187599adbef16fd79799a7",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Historical/Lash/GCN_Lash_FlogRope.cpp",
+          "mode": "whole_original",
+          "reference_commit": "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+          "source_encoding": "cp949",
+          "source_sha256": "1133c13133271389d57ee64a2da9a6de7eeb8494e5a5ca8d9eb27c9cfc8930e6",
+          "source_git_blob": "f2cfbf76d98d0aef1c3024105e5afa98e00047c8",
+          "segments": [
+            {
+              "start": 1,
+              "end": 49
+            }
+          ],
+          "canonical_source_line_count": 49
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/GCN_Lash_FlogRope.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": false,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성한 파일. 현재 삭제되어 최신 코드와 구분한 과거 구현으로 보존.",
+      "basis_commits": [
+        "bc67b4167a89465259187599adbef16fd79799a7",
+        "c5dc09fdf2b7056c90bada2580118a4f792b0b66"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Historical/Lash/GCN_Lash_FlogRope.h",
+          "mode": "whole_original",
+          "reference_commit": "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "8e30057c9f250f9b462cc5d95847f7d490b9d4f146286547497ad0784b885963",
+          "source_git_blob": "a4db7b6165ee694921a020101a65821ad64e9c68",
+          "segments": [
+            {
+              "start": 1,
+              "end": 28
+            }
+          ],
+          "canonical_source_line_count": 28
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/LashLockonWidget.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함. 現 cpp 원문은 비어 있으므로 별도 기능 로직을 주장하지 않음.",
+      "basis_commits": [
+        "cfc50ba0a2bdb950f6e315face8bdf088c1c6951"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/LashLockonWidget.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "segments": [],
+          "canonical_source_line_count": 0
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Lash/LashLockonWidget.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Lash",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "cfc50ba0a2bdb950f6e315face8bdf088c1c6951",
+        "aacbc68d6e4084a1eb6ffecf4b0a94850e388520"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Lash/LashLockonWidget.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "b97135c83401d90a5d3967df95bf78006cf208868701330083dd1f7745d3dec3",
+          "source_git_blob": "28e8ffece39fc5897e8d41f7e4ca1be6520f5c96",
+          "segments": [
+            {
+              "start": 1,
+              "end": 15,
+              "origin_commits": [
+                "aacbc68d6e4084a1eb6ffecf4b0a94850e388520",
+                "cfc50ba0a2bdb950f6e315face8bdf088c1c6951"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 15
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/LevelUpRow.h",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "깨진 한글 주석·BOM 복구만 확인. 레벨업 구조체·성장 기능은 horimi_ 구현. 기능 발췌에서 제외.",
+      "basis_commits": [
+        "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/AirDashAbility.cpp",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "대시 방향·관성·몽타주·종료 처리는 본인. horimi_가 daa94d153에서 DashBlocked 발동 차단을 추가했으므로 기능 공동 관여. include 정리도 별도 존재.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "cf35cc62ed17e3b4e2e49234491da38284a906a7",
+        "15a213c407e1705e5f9ccfbdd858eea022a46c86",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "985ace845d159f0baabf04c56036bbe40347e402",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/Movement/AirDashAbility.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "d362472086b76adb68b7654b8ab626b5a1b4c4b8de39fc61d1bb4def65d0595e",
+          "source_git_blob": "9e3df705c47d8081db3466afea7718b456f4a861",
+          "segments": [
+            {
+              "start": 2,
+              "end": 2,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 4,
+              "end": 4,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+              ]
+            },
+            {
+              "start": 6,
+              "end": 15,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "f30f73fda7d836b5374dd781b9ab2db747078976"
+              ]
+            },
+            {
+              "start": 20,
+              "end": 183,
+              "origin_commits": [
+                "985ace845d159f0baabf04c56036bbe40347e402",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "15a213c407e1705e5f9ccfbdd858eea022a46c86",
+                "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "cf35cc62ed17e3b4e2e49234491da38284a906a7",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 184
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/AirDashAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "15a213c407e1705e5f9ccfbdd858eea022a46c86",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/AirDashAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "5c446dd25f8d888817121d820a86df712f1803a932e253777780b2657ec5916b",
+          "source_git_blob": "850d107d93bf7c9c18dc22099eea61fb5ecdc9be",
+          "segments": [
+            {
+              "start": 1,
+              "end": 46,
+              "origin_commits": [
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 46
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/DoubleJumpAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/DoubleJumpAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "1526fb4c7b065baaa4320ffaffd66f2eafaebe4299682a038d86e4b45c6a8c7d",
+          "source_git_blob": "284e84379223f10d0f112316a1149dcec1616043",
+          "segments": [
+            {
+              "start": 1,
+              "end": 144,
+              "origin_commits": [
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 144
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/DoubleJumpAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/DoubleJumpAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "c7e7ca7dfff9ccc24fa82b40dd8a6927e620b7b50d9dc6af3cedbeb8f70b3c0a",
+          "source_git_blob": "8a486f21270a31ef51a1dd94d24b096c37b40c7c",
+          "segments": [
+            {
+              "start": 1,
+              "end": 46,
+              "origin_commits": [
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 46
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/GroundRollAbility.cpp",
+      "classification": "C",
+      "classification_label": "팀원과 기능 공동 관여",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "구르기 이동·카메라·점프 허용 구간은 본인. horimi_의 daa94d153 DashBlocked 발동 차단은 기능 변경이므로 공동으로 분류.",
+      "basis_commits": [
+        "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+        "21de6b96d260c9eb094f324b7b7f1846098febc8",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/GroundRollAbility.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "1b40808eb44d7b9667445ff25a27d80c790cc1e7451427aa4d87f0e3c2f733e5",
+          "source_git_blob": "58c33a3a0e53b6436eb9ed68c88430f3889e442e",
+          "segments": [
+            {
+              "start": 1,
+              "end": 2,
+              "origin_commits": [
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd"
+              ]
+            },
+            {
+              "start": 4,
+              "end": 15,
+              "origin_commits": [
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+                "21de6b96d260c9eb094f324b7b7f1846098febc8"
+              ]
+            },
+            {
+              "start": 17,
+              "end": 17,
+              "origin_commits": [
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            },
+            {
+              "start": 20,
+              "end": 200,
+              "origin_commits": [
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 201
+        }
+      ],
+      "basis_merge_commits": [
+        "cdb44946901b5a203db34d1626fe74e8438cf44f"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/GroundRollAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+        "21de6b96d260c9eb094f324b7b7f1846098febc8",
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/GroundRollAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "25ec96d1ea183cb0ae6f9f2f7ed196275d28eac0704218281ae3e67411954640",
+          "source_git_blob": "482d644f975a301fb40495b608601c33d5871e6f",
+          "segments": [
+            {
+              "start": 1,
+              "end": 63,
+              "origin_commits": [
+                "21de6b96d260c9eb094f324b7b7f1846098febc8",
+                "1c68301a42b4a037dcf380f07a12f5ffb4aec2fd",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 63
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/RollJumpAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/RollJumpAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "b8c015a630e8e73a6d727de90a137f11b2b6e1e7437f8e55852f94e4e4cebdc1",
+          "source_git_blob": "22bcd90ef948e24a834c2c72b03852f3e72c61ff",
+          "segments": [
+            {
+              "start": 1,
+              "end": 32,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 32
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/RollJumpAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/RollJumpAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "013e9aff5bc4757349e8de2e9906a8e8ecd96cf8dfec50f8a8c3a20f2bd1c3d1",
+          "source_git_blob": "45f73e28ef22083f5d4cd2dcffe254ff30203455",
+          "segments": [
+            {
+              "start": 1,
+              "end": 29,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "f769f460c783ae3045b907f28c2e43ce8fb0f3cf",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 29
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/SlideAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/SlideAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "f998d9031b5640c72738cac1ac65ad411ebd8054fce5db14a32399b3942016bd",
+          "source_git_blob": "4679c207ef182921089a960f4337d1bb34afddaa",
+          "segments": [
+            {
+              "start": 1,
+              "end": 77,
+              "origin_commits": [
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 77
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/SlideAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/SlideAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "7e769555fdf94b7f6c20b83649ae539acac9f3faacfd9349b4537447db1950b6",
+          "source_git_blob": "3cd2bd9e4ee05bfe47fceeeb487984e83e9688a6",
+          "segments": [
+            {
+              "start": 1,
+              "end": 25,
+              "origin_commits": [
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 25
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/VaultAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/VaultAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "861615e2e7747c73e09e9596bc8b7aad2b59995b45268e954519ac3132b5bd5b",
+          "source_git_blob": "ee5742f9d44a5668719de95415a8fd496b193750",
+          "segments": [
+            {
+              "start": 1,
+              "end": 220,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 220
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/VaultAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/VaultAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "692373d69df4a14f1cf920048b42881274b2e84fe53e143366063334a4ff7c6a",
+          "source_git_blob": "0ad4880c61e45cac25c96a528b56d9ebdddf20ec",
+          "segments": [
+            {
+              "start": 1,
+              "end": 69,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 69
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/WallClingAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/WallClingAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "37e8291399bf9b0d509a42a80e4cc9a72ddbadebeab1cfd844231a8eee3de3a7",
+          "source_git_blob": "fa526c355556ff7c9eb845de1e1ec9987db6d13a",
+          "segments": [
+            {
+              "start": 1,
+              "end": 78,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 78
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/WallClingAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "f30f73fda7d836b5374dd781b9ab2db747078976"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/WallClingAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "8be2988a4171c10b954d68202a397abeef9b31283d1bfe0ad2f69c45cb6e18c4",
+          "source_git_blob": "696736e3e5f4d41da6adad725f421cd6877d60ee",
+          "segments": [
+            {
+              "start": 1,
+              "end": 34,
+              "origin_commits": [
+                "f30f73fda7d836b5374dd781b9ab2db747078976"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 34
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/WallJumpAbility.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/WallJumpAbility.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "9b5376c4a16297ba178055567bbf62a80e8519331a956a963ec24be9bb270064",
+          "source_git_blob": "79515e87998adc5bc796c055a440d39fd0b5dd46",
+          "segments": [
+            {
+              "start": 1,
+              "end": 152,
+              "origin_commits": [
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 152
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/Ability/WallJumpAbility.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/WallJumpAbility.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "bdb8747766ecf528475e7f25f2eb4a8843429fd381b456264b4ee053faa050c4",
+          "source_git_blob": "04b350190444000c324007c008db6ecc49b666d5",
+          "segments": [
+            {
+              "start": 1,
+              "end": 35,
+              "origin_commits": [
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 35
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/BaseMovementComponent.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+        "4dab57ad700bb515b0b4dea85568b4664822f9de",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/BaseMovementComponent.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "554e307420e719aa047845d30bd8d0b8bf5af77af9cddd885f121b88af0f6c76",
+          "source_git_blob": "0d4b6bbbed6204e9e3554fb2b78a901992f45a5c",
+          "segments": [
+            {
+              "start": 1,
+              "end": 409,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "eb6b91bdb29c19fcc62806ac4c664a8613882ae2",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 409
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/MovementComponent/BaseMovementComponent.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "Movement",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+        "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e",
+        "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+        "cf35cc62ed17e3b4e2e49234491da38284a906a7",
+        "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+        "f30f73fda7d836b5374dd781b9ab2db747078976",
+        "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+        "42808dd0d120b7ba652ece250cd09d27b202dce4",
+        "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+        "08a7c27856b77d63c8fd538bcd4ae071395be2bc"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Movement/BaseMovementComponent.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "639f027b34f27e151ffaba5cddb67821c04674f3049677a7f9ed95c5b1f12d93",
+          "source_git_blob": "9348515107062d3acad6e3f5062552807c3b7b1d",
+          "segments": [
+            {
+              "start": 1,
+              "end": 149,
+              "origin_commits": [
+                "08a7c27856b77d63c8fd538bcd4ae071395be2bc",
+                "5ac8fafa4eaebbe217628e060c3baf3a98faf412",
+                "15098b31b3dc8cdaa6042a6bb1ebc24ad459857b",
+                "846584c22c3e2a00304410ffbe2bc9bdf89a2582",
+                "6067991e627efd9ab7ea84a55fb277a996fc27d5",
+                "cf35cc62ed17e3b4e2e49234491da38284a906a7",
+                "42808dd0d120b7ba652ece250cd09d27b202dce4",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "7f20ec59068440f8d5b197b37df7c9d338ac9f67",
+                "f30f73fda7d836b5374dd781b9ab2db747078976",
+                "251c6be67fd7bbda352ce7adbf4a8cc80f035a9e"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 149
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/Character/CharacterBase.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 초기 캐릭터 파일을 공통 캐릭터 구조 통합 과정에서 삭제. 삭제한 파일의 본체를 본인 구현으로 간주하거나 복원해 공개하지 않음.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "5ff110a36d5c9c21d75d9f4cb46891de02e14953",
+          "author": "Youngwoo",
+          "subject": "Feature: 맵 추가"
+        },
+        {
+          "sha": "dfc81883fb13514b6840a762fa153f2d97a6d875",
+          "author": "Youngwoo",
+          "subject": "Feat: 캐릭터 에셋(Viscous) 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/Character/CharacterBase.h",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 초기 캐릭터 파일을 공통 캐릭터 구조 통합 과정에서 삭제. 삭제한 파일의 본체를 본인 구현으로 간주하거나 복원해 공개하지 않음.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "5ff110a36d5c9c21d75d9f4cb46891de02e14953",
+          "author": "Youngwoo",
+          "subject": "Feature: 맵 추가"
+        },
+        {
+          "sha": "dfc81883fb13514b6840a762fa153f2d97a6d875",
+          "author": "Youngwoo",
+          "subject": "Feat: 캐릭터 에셋(Viscous) 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/DL_AbilitySystemComponent.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "horimi_의 ASC에 GameplayTag로 첫 활성 효과의 남은 시간·지속시간을 조회하는 GetCooldownTimeByTag 추가.",
+      "basis_commits": [
+        "985ace845d159f0baabf04c56036bbe40347e402"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "3c818470371accd77cacb1687c5f5ac4b2e57901",
+          "author": "horimi_",
+          "subject": "Feat: 커스텀 ASC 추가"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "776ed13fc0cbef0d1f387e204a6f44be07015e28",
+          "author": "dalbi090211",
+          "subject": "Feature : 포탑 BT, GA_Beam 구현"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/DL_AbilitySystemComponent.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "7c53c09a9bd3af2ef9bcdad24326f76f133fa02179ccceeb4a15ea373e1e84e4",
+          "source_git_blob": "81aba8f024681d7ea5d2dbc51b2129fda7b753eb",
+          "segments": [
+            {
+              "start": 85,
+              "end": 110,
+              "origin_commits": [
+                "985ace845d159f0baabf04c56036bbe40347e402"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 110
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/GA_SkillBase.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "horimi_의 스킬 베이스에 무타깃 모드 서버 대기 우회/빈 TargetData 전송을 과거 추가. 최신 14fee7c08에서 팀원이 다른 구조로 대체; 현재 프레임워크를 본인 것으로 공개하지 않고 당시 본인 추가문만 별도 발췌.",
+      "basis_commits": [
+        "985ace845d159f0baabf04c56036bbe40347e402",
+        "249fc259fce810baaf7a9101fa360da732b721e4"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "fe71ae62103d0e9b5010ea9dd5463e025ae042f1",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 공용 베이스 GA(GA_SkillBase) 추가"
+        },
+        {
+          "sha": "a298ed326a39aabb67229c738960bc29aacb943f",
+          "author": "horimi_",
+          "subject": "Refactor: 스킬 사거리를 GA_SkillBase.SkillRange로 단일화"
+        },
+        {
+          "sha": "1e3f2a666597bfb52c1b81d10721826342aa0d65",
+          "author": "horimi_",
+          "subject": "Feat: 스코프 타겟팅 및 자동 confirm 모드 추가"
+        },
+        {
+          "sha": "a4ce51e3347a83a9dce645fea353c9cdffc46dde",
+          "author": "horimi_",
+          "subject": "Feat: GA_SkillBase 쿨다운 추가"
+        },
+        {
+          "sha": "fb6ada562f5bcdd057396b713c215998c9c7669e",
+          "author": "horimi_",
+          "subject": "Feat: 스코프/프리뷰 타겟데이터 클라→서버 전송 구현"
+        },
+        {
+          "sha": "f4f574769fc21b9c21f7e3e65431549dfeb6360d",
+          "author": "horimi_",
+          "subject": "Feat: 조준 중 AimingMontage 재생 및 노티파이 서버 가드 추가"
+        },
+        {
+          "sha": "9f45bbe7527a97205c6d7ee8c6db8538196f7b6e",
+          "author": "horimi_",
+          "subject": "Chore: 스코프 타겟 수집에 적군/아군 필터 뼈대 추가"
+        },
+        {
+          "sha": "415f6e15eefe80278b57e7df435704b53a93f08a",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 GA 간 상호배제(State.Skill.Active) 추가"
+        },
+        {
+          "sha": "9d72352dea07c4b126140be8b15ac2a2437793d8",
+          "author": "horimi_",
+          "subject": "Feature GA_SkillBase에 CastMontage 종료 시 어빌리티 유지 옵션 추가"
+        },
+        {
+          "sha": "0950d1e95534720a80bef0fbe735e6093cb65199",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 셀프 타겟 기능, Skill IA 추가"
+        },
+        {
+          "sha": "acfa347e11c0918b853c2e58542c239b5982cfc0",
+          "author": "horimi_",
+          "subject": "Fix: 즉시 시전 스킬의 서버 타겟 데이터 대기 방지"
+        },
+        {
+          "sha": "fcfabb487d3e667bf9ce3addbc47ebeb826f1f0c",
+          "author": "horimi_",
+          "subject": "Feat: 몽타주 없는 즉시 시전 및 쿨다운 처리 보완"
+        },
+        {
+          "sha": "daa94d15308d97b6d83aee6b357da2963b89a425",
+          "author": "horimi_",
+          "subject": "Feat: 상점 아이템 추가"
+        },
+        {
+          "sha": "c0f4730e7d307c4057a11ae78dd50091f79e1a8b",
+          "author": "horimi_",
+          "subject": "Refactor: TeamIdx 기반 팀 판정으로 통합"
+        },
+        {
+          "sha": "545ccc265a28669d4519affc590fa194edafc8d0",
+          "author": "Youngwoo",
+          "subject": "Feat: 로그 추가"
+        },
+        {
+          "sha": "29e5459fb47974b0b8cd3c045d4155279e795aa2",
+          "author": "Youngwoo",
+          "subject": "Feat: Doorman 1번스킬 구현"
+        },
+        {
+          "sha": "8dd276af410aa6146837c0868b36053e3cbafc6d",
+          "author": "horimi_",
+          "subject": "Feat: Scope 스킬 사용 시 셀프 타겟 기능 추가"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "3b8d6ba7f050625ec06a0ac9c0b060902468da5a",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 조준 중 타겟팅 취소 및 기본 공격 입력 차단"
+        },
+        {
+          "sha": "6a40cbf374fa5cfa8c74ba80941a442c1341f5df",
+          "author": "horimi_",
+          "subject": "Fix: 스킬 디버그 드로우 제거"
+        },
+        {
+          "sha": "ea5a141a4c2df86dae019128fca88d03be5b6a90",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 네트워크 예측 동기화"
+        },
+        {
+          "sha": "f2c274efeead042946fc53e6eb3659c58f4dcfdb",
+          "author": "Youngwoo",
+          "subject": "Fix: Doorman 스킬 및 투사체 오브젝트 풀링"
+        },
+        {
+          "sha": "d8bf1d33dcaec819f5c1324e1177c099b0a0c1a7",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 오브젝트 풀링"
+        },
+        {
+          "sha": "14fee7c0892060856fe478541a7407a6e3b29e66",
+          "author": "horimi_",
+          "subject": "Refactor: SkillBase 리팩토링 및 오류 수정"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "848936a329757e68229f6a672f693524b6b03bb8",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "a446283ba7cc09f53f187850c431908c9a9f9974",
+          "author": "Youngwoo"
+        },
+        {
+          "sha": "422619094eaf1707f458eaaf8fa29521bc2fc3b1",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/Historical/Integration/GA_SkillBase.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "985ace845d159f0baabf04c56036bbe40347e402",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "e5f1f28c73afb2405c8d787d10e4bbef2f3f8536d9a7891c07cec388723481c6",
+          "source_git_blob": "2fdf5a971c681468c390e1f9b55d0a6d62325be2",
+          "segments": [
+            {
+              "start": 76,
+              "end": 83
+            }
+          ],
+          "canonical_source_line_count": 385
+        },
+        {
+          "output_path": "Code/Historical/Integration/GA_SkillBase.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "249fc259fce810baaf7a9101fa360da732b721e4",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "a46b4bd320278358638b2721d3183750fe7876b632228bd6b2090647291fbec2",
+          "source_git_blob": "8d4bca1b29831a26a5349964330c1aebc2a12073",
+          "segments": [
+            {
+              "start": 90,
+              "end": 94
+            }
+          ],
+          "canonical_source_line_count": 383
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/Player/PlayerCharacter.cpp",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 초기 캐릭터 파일을 공통 캐릭터 구조 통합 과정에서 삭제. 삭제한 파일의 본체를 본인 구현으로 간주하거나 복원해 공개하지 않음.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "5ff110a36d5c9c21d75d9f4cb46891de02e14953",
+          "author": "Youngwoo",
+          "subject": "Feature: 맵 추가"
+        },
+        {
+          "sha": "dfc81883fb13514b6840a762fa153f2d97a6d875",
+          "author": "Youngwoo",
+          "subject": "Feat: 캐릭터 에셋(Viscous) 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Private/Player/PlayerCharacter.h",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": false,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 초기 캐릭터 파일을 공통 캐릭터 구조 통합 과정에서 삭제. 삭제한 파일의 본체를 본인 구현으로 간주하거나 복원해 공개하지 않음.",
+      "basis_commits": [
+        "5ac8fafa4eaebbe217628e060c3baf3a98faf412"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "5ff110a36d5c9c21d75d9f4cb46891de02e14953",
+          "author": "Youngwoo",
+          "subject": "Feature: 맵 추가"
+        },
+        {
+          "sha": "dfc81883fb13514b6840a762fa153f2d97a6d875",
+          "author": "Youngwoo",
+          "subject": "Feat: 캐릭터 에셋(Viscous) 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Public/DL_AbilitySystemComponent.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "쿨타임 조회 함수 선언만 기능 기여. 기존 강화 함수에 대한 한글 주석 복구는 기능 소유권 근거에서 제외.",
+      "basis_commits": [
+        "d6af142b877cc16e23bc4276540a74e78562d759",
+        "985ace845d159f0baabf04c56036bbe40347e402"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "3c818470371accd77cacb1687c5f5ac4b2e57901",
+          "author": "horimi_",
+          "subject": "Feat: 커스텀 ASC 추가"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "776ed13fc0cbef0d1f387e204a6f44be07015e28",
+          "author": "dalbi090211",
+          "subject": "Feature : 포탑 BT, GA_Beam 구현"
+        },
+        {
+          "sha": "eacbe50b23a62ca63283391aa0d97787e216dc40",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언, 포탑의 공격 이펙트 구현"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/DL_AbilitySystemComponent.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "d7bcccb36623aaafac2b525d294f175725bd95d7acc50122107d43765cc3a5c9",
+          "source_git_blob": "0bdd632e5249dff7e8321f5548ae75e7fe5db4c6",
+          "segments": [
+            {
+              "start": 31,
+              "end": 31,
+              "origin_commits": [
+                "d6af142b877cc16e23bc4276540a74e78562d759"
+              ]
+            },
+            {
+              "start": 34,
+              "end": 37,
+              "origin_commits": [
+                "985ace845d159f0baabf04c56036bbe40347e402"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 49
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Public/GA_SkillBase.h",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "팀원 스킬 베이스의 콜백 접근 지정자를 protected로 변경한 확장 연결 1줄. 스킬 프레임워크 설계/구현 담당으로 주장하지 않음.",
+      "basis_commits": [
+        "718f4d5761df415a677c547aeb21284353811ba6"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "fe71ae62103d0e9b5010ea9dd5463e025ae042f1",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 공용 베이스 GA(GA_SkillBase) 추가"
+        },
+        {
+          "sha": "a298ed326a39aabb67229c738960bc29aacb943f",
+          "author": "horimi_",
+          "subject": "Refactor: 스킬 사거리를 GA_SkillBase.SkillRange로 단일화"
+        },
+        {
+          "sha": "1e3f2a666597bfb52c1b81d10721826342aa0d65",
+          "author": "horimi_",
+          "subject": "Feat: 스코프 타겟팅 및 자동 confirm 모드 추가"
+        },
+        {
+          "sha": "a4ce51e3347a83a9dce645fea353c9cdffc46dde",
+          "author": "horimi_",
+          "subject": "Feat: GA_SkillBase 쿨다운 추가"
+        },
+        {
+          "sha": "fb6ada562f5bcdd057396b713c215998c9c7669e",
+          "author": "horimi_",
+          "subject": "Feat: 스코프/프리뷰 타겟데이터 클라→서버 전송 구현"
+        },
+        {
+          "sha": "f4f574769fc21b9c21f7e3e65431549dfeb6360d",
+          "author": "horimi_",
+          "subject": "Feat: 조준 중 AimingMontage 재생 및 노티파이 서버 가드 추가"
+        },
+        {
+          "sha": "9f45bbe7527a97205c6d7ee8c6db8538196f7b6e",
+          "author": "horimi_",
+          "subject": "Chore: 스코프 타겟 수집에 적군/아군 필터 뼈대 추가"
+        },
+        {
+          "sha": "9d72352dea07c4b126140be8b15ac2a2437793d8",
+          "author": "horimi_",
+          "subject": "Feature GA_SkillBase에 CastMontage 종료 시 어빌리티 유지 옵션 추가"
+        },
+        {
+          "sha": "0950d1e95534720a80bef0fbe735e6093cb65199",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 셀프 타겟 기능, Skill IA 추가"
+        },
+        {
+          "sha": "fcfabb487d3e667bf9ce3addbc47ebeb826f1f0c",
+          "author": "horimi_",
+          "subject": "Feat: 몽타주 없는 즉시 시전 및 쿨다운 처리 보완"
+        },
+        {
+          "sha": "695ac0125484f44299b7b576d5ab70742b82b401",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "16349091b4de84ccba8ac1ae6c30eb1e28bef155",
+          "author": "horimi_",
+          "subject": "Revert \"Feat: 아이템, 상점 UI 추가 및 개선\""
+        },
+        {
+          "sha": "fed3d9e3084198f73106742c2af2bb597964a218",
+          "author": "horimi_",
+          "subject": "Feat: 아이템, 상점 UI 추가 및 개선"
+        },
+        {
+          "sha": "8dd276af410aa6146837c0868b36053e3cbafc6d",
+          "author": "horimi_",
+          "subject": "Feat: Scope 스킬 사용 시 셀프 타겟 기능 추가"
+        },
+        {
+          "sha": "b0464e1eaa3456242451775651695ef6b7d3f247",
+          "author": "horimi_",
+          "subject": "Feat: Viscous 스킬 구현"
+        },
+        {
+          "sha": "3b8d6ba7f050625ec06a0ac9c0b060902468da5a",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 조준 중 타겟팅 취소 및 기본 공격 입력 차단"
+        },
+        {
+          "sha": "ea5a141a4c2df86dae019128fca88d03be5b6a90",
+          "author": "horimi_",
+          "subject": "Fix: Viscous 스킬 네트워크 예측 동기화"
+        },
+        {
+          "sha": "f2c274efeead042946fc53e6eb3659c58f4dcfdb",
+          "author": "Youngwoo",
+          "subject": "Fix: Doorman 스킬 및 투사체 오브젝트 풀링"
+        },
+        {
+          "sha": "d8bf1d33dcaec819f5c1324e1177c099b0a0c1a7",
+          "author": "Youngwoo",
+          "subject": "Feat: 스킬 오브젝트 풀링"
+        },
+        {
+          "sha": "14fee7c0892060856fe478541a7407a6e3b29e66",
+          "author": "horimi_",
+          "subject": "Refactor: SkillBase 리팩토링 및 오류 수정"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/GA_SkillBase.excerpt.h",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "803c629c1f5818668af0fa601ccc9148f3d88bc9a13a108d254891ee94335d09",
+          "source_git_blob": "924b2a1b129d702545ffa829c3c72fa410d85b12",
+          "segments": [
+            {
+              "start": 237,
+              "end": 237,
+              "origin_commits": [
+                "718f4d5761df415a677c547aeb21284353811ba6"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 268
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/TeamProject_DL.Build.cs",
+      "classification": "E",
+      "classification_label": "정리·임시 대응·테스트·설정",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "UI 구현을 위한 UMG/Slate/SlateCore 의존성 통합 기록. 최신 파일에는 해당 본인 행이 남지 않아 전체 빌드 설정을 복사하지 않음.",
+      "basis_commits": [
+        "695932c9c9407d67bd239dc7adfc7735ba35589b"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "ddf70f058a81207c07df57390e3f1996f17bac8a",
+          "author": "Youngwoo",
+          "subject": "Feature: 언리얼 프로젝트 Init"
+        },
+        {
+          "sha": "f38d7876fd6430b73cd12e1ea227ec15d3e50a9b",
+          "author": "dalbi090211",
+          "subject": "캐릭터 뼈대, 스탯 초기화 구현"
+        },
+        {
+          "sha": "2b2ff59506157225daadf073a9d7ba31ef5bbcc7",
+          "author": "dalbi090211",
+          "subject": "캐릭터 선택, 공격 반응 시스템 구현"
+        },
+        {
+          "sha": "5ff110a36d5c9c21d75d9f4cb46891de02e14953",
+          "author": "Youngwoo",
+          "subject": "Feature: 맵 추가"
+        },
+        {
+          "sha": "dfc81883fb13514b6840a762fa153f2d97a6d875",
+          "author": "Youngwoo",
+          "subject": "Feat: 캐릭터 에셋(Viscous) 추가"
+        },
+        {
+          "sha": "176b63e745f8a88f99a2d10d753856be1e220401",
+          "author": "horimi_",
+          "subject": "Feat: 스킬 프리뷰 프로토타입 추가"
+        },
+        {
+          "sha": "5ea212517907b166a41dc5edb9341c05befbf197",
+          "author": "horimi_",
+          "subject": "Feat: 타겟팅 스코프 추가"
+        },
+        {
+          "sha": "df28a0adb078d3f9e70bfbf517a024463ef307fa",
+          "author": "horimi_",
+          "subject": "fix: 타겟팅 스코프 정책 변경"
+        },
+        {
+          "sha": "c99f65cefc196bfd27a85075b7f6148fc6e0feb6",
+          "author": "horimi_",
+          "subject": "Feat: 캐릭터 레벨업 및 스킬 레벨업 시스템 추가"
+        },
+        {
+          "sha": "8f1046640805cfa50f0b2fdd1fdd30c56b8ffc4e",
+          "author": "Youngwoo",
+          "subject": "Feat: 사격 WIP"
+        },
+        {
+          "sha": "96352b08159d7bb10412eec0cd5357bbe3b6fa52",
+          "author": "dalbi090211",
+          "subject": "Feature : 미니언 스폰 시스템 뼈대"
+        },
+        {
+          "sha": "7677c640802e1ba00ff812d16696fc30a82d7b03",
+          "author": "horimi_",
+          "subject": "Feat: 상점 및 인벤토리 기능 확장"
+        },
+        {
+          "sha": "92f0c2ffef065e59d46d60ff98a5f0ce04d34faa",
+          "author": "horimi_",
+          "subject": "Feat: GameLift 매치메이킹 및 전투 서버 연동 추가"
+        },
+        {
+          "sha": "9a2133a387c4cc368b6cdc576a402f1d461a0b5a",
+          "author": "horimi_",
+          "subject": "Refactor: 인벤토리 거래 및 아이템 데이터 구조 개선"
+        },
+        {
+          "sha": "47ddbb4c0555933dbae840bf4e4e87180aea1b8d",
+          "author": "dalbi090211",
+          "subject": "Feature : 데미지 UI 추가, 씬 전환 간 연출 구현, 미니언 경로 추가, 데미지 버그 수정"
+        },
+        {
+          "sha": "6fc8810f6027648cb55eb8700e5764c5f16a7e9f",
+          "author": "horimi_",
+          "subject": "Feat: Gamelift Plugin 추가"
+        },
+        {
+          "sha": "d12e82ff0149fb2486d59e9df571210ab026b1ff",
+          "author": "Youngwoo",
+          "subject": "Fix: 네트워크 wip"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "124df20b74786acc3b0964aa167696509f39966f",
+          "author": "Youngwoo Choi"
+        },
+        {
+          "sha": "c1d9c2ffe3272f024a6cd958677c3af3ed370b61",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "79a9761739e007bcefa20b5753cf06e785d9719e",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "e70f830e0b49425970b3c9c41fde573b04a03e4c",
+          "author": "dalbi090211"
+        },
+        {
+          "sha": "7184193aa43dd67cf65190efdf74ffac2ac3f3e7",
+          "author": "horimi_"
+        }
+      ],
+      "exports": [],
+      "withheld_reason": "기능 본체로 전시할 코드가 아님. 분류표·커밋 근거에만 남기고 원 파일 본체는 복사하지 않음.",
+      "basis_merge_commits": [
+        "f6122f72492ea1e4924755618464e12878401503"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/InventoryHUDWidget.cpp",
+      "classification": "B",
+      "classification_label": "본인 구현 + 팀원 비기능 수정",
+      "current": true,
+      "feature": "UI",
+      "contribution": "슬롯 캐싱·정렬·Pawn/인벤토리 바인딩은 본인. horimi_ 5005b20a4와 dalbi090211 70a21dc1b는 PlayerState.h include만 추가. 중복 include도 원문 그대로 보존.",
+      "basis_commits": [
+        "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+        "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+        "11fb038132c009b5697c366e9ea08c87524f35a9",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "5005b20a439b81b31dc4d9de193581b4ee25e960",
+          "author": "horimi_",
+          "subject": "Fix"
+        },
+        {
+          "sha": "70a21dc1ba0b9cfcf3a4b5ac8421d4634cd6de1a",
+          "author": "dalbi090211",
+          "subject": "Feature : 3스킬 구현"
+        }
+      ],
+      "teammate_merge_changes": [
+        {
+          "sha": "5f89c8c7fa395537da0548c7eb599eca3dd3e3c1",
+          "author": "dalbi090211"
+        }
+      ],
+      "exports": [
+        {
+          "output_path": "Code/UI/InventoryHUDWidget.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "53b062ad2ef18e6f6b5a1a42e684f00867d71d5739b67bf34ee8b1821d1e04cf",
+          "source_git_blob": "b2e0f4a790daa7678b40b979b716b2e1760f760f",
+          "segments": [
+            {
+              "start": 1,
+              "end": 249,
+              "origin_commits": [
+                "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+                "70a21dc1ba0b9cfcf3a4b5ac8421d4634cd6de1a",
+                "5005b20a439b81b31dc4d9de193581b4ee25e960",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+                "11fb038132c009b5697c366e9ea08c87524f35a9"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 249
+        }
+      ],
+      "basis_merge_commits": [
+        "ad33ea46cc6b3a7f84e4f61ea0cae00dc8c0b35f"
+      ]
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/InventoryHUDWidget.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "UI",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+        "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/UI/InventoryHUDWidget.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "4a9ea1398d52e94f029cc18b58082bea97cdc47929196396fe2e41c25819c55c",
+          "source_git_blob": "87f24f9a78799f48d5d2bb16445543cfa3291cda",
+          "segments": [
+            {
+              "start": 1,
+              "end": 59,
+              "origin_commits": [
+                "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f",
+                "7a808fc3e40a03cdbdbeebcbb9d7d51abf1b896a"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 59
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/InventorySlotWidget.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "UI",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/UI/InventorySlotWidget.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "e37b4f600416b4aba94d13efae6f56d7a8b78ba1e9c94d61036f6c63378bec00",
+          "source_git_blob": "f7ffe6697f9752b30950a9b4e40193de7dd0e0e1",
+          "segments": [
+            {
+              "start": 1,
+              "end": 92,
+              "origin_commits": [
+                "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 92
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/InventorySlotWidget.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "UI",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+        "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/UI/InventorySlotWidget.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "eeaf2e6bfec1e6d7f3544c8439bb011941fd0ee37d6732aae5e704d90d0a8ca0",
+          "source_git_blob": "65e0204140963c96f2181c11e4f08277e91d0631",
+          "segments": [
+            {
+              "start": 1,
+              "end": 31,
+              "origin_commits": [
+                "064bb59af764f11c2d889536b3e097ae3d42b1ed",
+                "c1a352d18b8af4d73e41f480f5380f96372aa45f"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 31
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/OverheadHealthBarWidget.cpp",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "UI",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+        "c2d41eb0901b7431e51e90d03af123643322b03e"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/UI/OverheadHealthBarWidget.cpp",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "b45169afe25142271fa867e603e14ad678ab7114ff31fddfc0912f15a2fd413f",
+          "source_git_blob": "ae27ee5f4afe6a758d31e6ebec525454e11aeb5b",
+          "segments": [
+            {
+              "start": 1,
+              "end": 39,
+              "origin_commits": [
+                "c2d41eb0901b7431e51e90d03af123643322b03e",
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 39
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/UI/OverheadHealthBarWidget.h",
+      "classification": "A",
+      "classification_label": "본인 단독 구현",
+      "current": true,
+      "feature": "UI",
+      "contribution": "본인이 신규 작성하고 후속 수정한 파일. 일반 커밋·병합 combined diff·현재 blame에서 팀원의 기능 변경을 확인하지 못함.",
+      "basis_commits": [
+        "fce22f4c14522e87e4dcd671c51e2b040c88f2e1",
+        "c2d41eb0901b7431e51e90d03af123643322b03e"
+      ],
+      "teammate_normal_commits": [],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/UI/OverheadHealthBarWidget.h",
+          "mode": "whole_original",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "31e678ccec5f7bbfc22375fa81c9a3ec6d65497e5773d2db817d3bdb8675b9f5",
+          "source_git_blob": "0fd01d041f36e13b1451e1fcdea4461ae3e35822",
+          "segments": [
+            {
+              "start": 1,
+              "end": 30,
+              "origin_commits": [
+                "c2d41eb0901b7431e51e90d03af123643322b03e",
+                "fce22f4c14522e87e4dcd671c51e2b040c88f2e1"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 30
+        }
+      ],
+      "basis_merge_commits": []
+    },
+    {
+      "original_path": "Source/TeamProject_DL/Weapon/Ability/GA_Reload.cpp",
+      "classification": "D",
+      "classification_label": "팀원 시스템에 본인 기능 추가",
+      "current": true,
+      "feature": "Integration",
+      "contribution": "Youngwoo의 재장전 GA에 ActivationOwnedTags의 ReloadTag 등록 한 줄 추가. HUD의 재장전 상태 표시 연결 기여이며 재장전 기능 원 구현은 팀원.",
+      "basis_commits": [
+        "d6af142b877cc16e23bc4276540a74e78562d759"
+      ],
+      "teammate_normal_commits": [
+        {
+          "sha": "c9798b185eb22ef08cccbe011dbe4ed48b602ad8",
+          "author": "Youngwoo",
+          "subject": "Fix: 머지 충돌 해결"
+        },
+        {
+          "sha": "85a30e40a7f5fae78b32841fc8b314e0a46061ec",
+          "author": "Youngwoo",
+          "subject": "Feat: 코드 리팩토링 및 포털 광원 추가"
+        }
+      ],
+      "teammate_merge_changes": [],
+      "exports": [
+        {
+          "output_path": "Code/Integration/GA_Reload.excerpt.cpp",
+          "mode": "own_lines_excerpt",
+          "reference_commit": "db9a1720265f38f776d8c1ff003933a356ebeef3",
+          "source_encoding": "utf-8-sig",
+          "source_sha256": "e37ad9919fddf310d2962c2421dfdcb6f33e7881ab6ab400a853cc33f664346d",
+          "source_git_blob": "f1f07b643dc84dd488ee70302670552831905dca",
+          "segments": [
+            {
+              "start": 26,
+              "end": 26,
+              "origin_commits": [
+                "d6af142b877cc16e23bc4276540a74e78562d759"
+              ]
+            }
+          ],
+          "canonical_source_line_count": 190
+        }
+      ],
+      "basis_merge_commits": []
+    }
+  ]
+}
