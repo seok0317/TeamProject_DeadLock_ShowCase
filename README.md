@@ -15,9 +15,9 @@
 
 ## 영상 / 포트폴리오
 
-[![플레이 영상](https://img.youtube.com/vi/5UiPGiFKB0o/maxresdefault.jpg)](https://youtu.be/5UiPGiFKB0o)
+[![플레이 영상](https://img.youtube.com/vi/bofm9y6PuEM/maxresdefault.jpg)](https://youtu.be/bofm9y6PuEM)
 
-- 📑 [포트폴리오 PDF](https://drive.google.com/file/d/19EC3kIesCKCXD8E4hzk-x6auU_3-04JV/view?usp=sharing)
+- 📑 [포트폴리오 PDF](https://drive.google.com/file/d/19EC3kIesCKCXD8E4hzk-x6auU_3-04JV/view?usp=drive_link)
 
 ## 담당 영역
 
