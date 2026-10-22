@@ -14,6 +14,12 @@
 | 엔진 / 언어 | Unreal Engine 5.6 / C++ · Blueprint |
 | 주요 기술 | GAS · Enhanced Input · UMG · Niagara · Git/GitHub |
 
+## 영상 / 포트폴리오
+
+[![플레이 영상](https://img.youtube.com/vi/5UiPGiFKB0o/maxresdefault.jpg)](https://youtu.be/5UiPGiFKB0o)
+
+- 📑 [포트폴리오 PDF](https://drive.google.com/file/d/19EC3kIesCKCXD8E4hzk-x6auU_3-04JV/view?usp=sharing)
+
 ## 담당 영역
 
 **플레이어 조작 및 이동**
