@@ -12,7 +12,6 @@
 | 개발 기간 | 2026.07.01 ~ 2026.08.06경 (기존 조사에서 본인이 확인한 대략적인 본 개발 기간) |
 | 개발 인원 | 4명 |
 | 엔진 / 언어 | Unreal Engine 5.6 / C++ · Blueprint |
-| 주요 기술 | GAS · Enhanced Input · UMG · Niagara · Git/GitHub |
 
 ## 영상 / 포트폴리오
 
